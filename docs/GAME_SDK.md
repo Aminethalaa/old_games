@@ -89,7 +89,8 @@ Retro.game({
   onPress(btn) { /* optional: edge events 'up','down','left','right','a','b' — delivered at the start of update */ },
   onPointer(e) { /* optional touch: e = {type:'down'|'move'|'up', x, y} in field coordinates */ },
   serialize() { return { /* JSON-able */ }; },  restore(s) { /* inverse of serialize */ },  // optional save & resume
-  onGameOver() {}, silentGameOver: false
+  onGameOver() {}, silentGameOver: false,
+  rawStart: false   // true = S/P is delivered to the game as a normal button (Retro.input.held.start / onPress('start')) while playing
 });
 ```
 
@@ -112,6 +113,7 @@ Retro.game({
 | Colours | `Retro.colors.{black,navy,plum,green,brown,dgray,silver,white,red,orange,yellow,lime,blue,lavender,pink,peach,cyan,purple,ink,night,steel}` and `Retro.pal[0..15]` (PICO‑8 palette) |
 | Effects | `Retro.fx.burst(x,y,{n,color|[colors],speed,life,size,gravity})` · `fx.text(x,y,str,color)` · `fx.shake(mag,sec)` · `fx.flash(color,sec)` (all auto‑updated/drawn) |
 | Sound | `Retro.sfx.play(name)` with `blip select move tick rotate drop land line coin jump hit shoot explode powerup lose win start pause trophy` · `Retro.sfx.tone(freq,dur,{type,vol,slide,delay})` · `Retro.sfx.noise(dur,{vol,freq,sweep})` · `music: 'name'` in the config (or `Retro.music.play(name)`) |
+| Raw audio | `Retro.audio.context()` (the shared `AudioContext`) and `Retro.audio.output()` (a `GainNode` that honours the SOUND key and volume) — for games that bring their own sound source, e.g. the emulators in `web/emulators/` |
 | Haptics | `Retro.vibrate(ms)` (≤ 500) |
 | Achievements | `Retro.achieve('id')` (declare it in the manifest; shows a toast once, ever) |
 | Storage | `Retro.store.get(key, default)` / `Retro.store.set(key, jsonValue)` for per‑game extras (best time, difficulty…) |
