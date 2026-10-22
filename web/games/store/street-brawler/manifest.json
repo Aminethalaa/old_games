@@ -1,0 +1,38 @@
+{
+  "id": "street-brawler",
+  "name": "Street Brawler",
+  "short": "BRAWLER",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "action",
+  "layout": "full",
+  "size": [136, 164],
+  "color": "#ff8a1e",
+  "description": "Fight through city streets, harbour docks and neon rooftops. Chain punches, jump kick, swing a pipe and take down each stage's boss.",
+  "controls": { "dpad": "Walk in 8 directions", "a": "Punch combo / air kick", "b": "Jump (A+B = spin attack)" },
+  "tags": ["brawler", "fighting", "scrolling", "action"],
+  "achievements": [
+    { "id": "rookie-rumble", "name": "Rookie Rumble", "desc": "Knock out 10 thugs" },
+    { "id": "pipe-dreams", "name": "Pipe Dreams", "desc": "Knock out 3 enemies with the pipe" },
+    { "id": "boss-buster", "name": "Boss Buster", "desc": "Defeat a stage boss" },
+    { "id": "city-hero", "name": "City Hero", "desc": "Clear all three stages" }
+  ],
+  "icon": {
+    "palette": { "S": "#ffccaa", "D": "#c4825e", "R": "#ff004d", "Y": "#ffec27", "W": "#ffffff" },
+    "rows": [
+      "............",
+      "........Y...",
+      "......Y.Y.Y.",
+      "SSSSSS.YYY..",
+      "SDSDSDYYWYY.",
+      "SSSSSSSYWWYY",
+      "SDSDSDYYWYY.",
+      "SSSSSS.YYY.Y",
+      "RRRRR.Y.Y.Y.",
+      "RRRRR...Y...",
+      "............",
+      "............"
+    ]
+  }
+}

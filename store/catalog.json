@@ -1078,6 +1078,51 @@
    "achievements": 4
   },
   {
+   "id": "ring-champs",
+   "name": "Ring Champs",
+   "short": "RING",
+   "version": "1.0.0",
+   "category": "action",
+   "color": "#ff4fa0",
+   "description": "Climb the boxing ladder against a cast of cartoon fighters. Read each tell, dodge, counter to earn stars, then unleash the super uppercut.",
+   "author": "Retro Console",
+   "tags": [
+    "boxing",
+    "fighting",
+    "reflex",
+    "ladder"
+   ],
+   "icon": {
+    "palette": {
+     "R": "#ff2f4a",
+     "r": "#a01028",
+     "W": "#ffffff",
+     "Y": "#ffec27",
+     "P": "#ff9aae",
+     "K": "#1d2b53"
+    },
+    "rows": [
+     "............",
+     ".YY......YY.",
+     ".YY.RRRR.YY.",
+     "...RRRRRR...",
+     "..RPPRRRRR..",
+     "..RPRRRRRRR.",
+     ".RRRRRRRRRR.",
+     ".RRRRRRRRRr.",
+     "..rRRRRRRr..",
+     "...rrrrrr...",
+     "...WWWWWW...",
+     "...WWWWWW..."
+    ]
+   },
+   "size": 62883,
+   "sha256": "8e4c5a9d062795e66737d2895a871d2c1723bb90a048b808f1725575fe0055c9",
+   "url": "packs/ring-champs-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
    "id": "rune-dungeon",
    "name": "Rune Dungeon",
    "short": "RUNES",
@@ -1217,6 +1262,99 @@
    "size": 29438,
    "sha256": "19656d2901ada551abe66271343496fdfba9554e021674203814d053759f06a3",
    "url": "packs/sky-hopper-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "spin-runner",
+   "name": "Spin Runner",
+   "short": "SPINRUN",
+   "version": "1.0.0",
+   "category": "action",
+   "color": "#18d8c0",
+   "description": "Roll as Orb, a tiny round robot, through three fast zones: windmill fields, a glowing mushroom cavern and a clockwork works. Build speed on slopes, charge-roll, loop the loop and smash the bugs.",
+   "author": "Retro Console",
+   "tags": [
+    "platformer",
+    "speed",
+    "momentum",
+    "robot"
+   ],
+   "icon": {
+    "palette": {
+     "O": "#1a1838",
+     "W": "#ffffff",
+     "S": "#d4daf4",
+     "D": "#8e98cc",
+     "T": "#18c8b0",
+     "K": "#14122a",
+     "A": "#ffb020",
+     "R": "#ff8a1e",
+     "G": "#a06aff",
+     "H": "#e0ccff"
+    },
+    "rows": [
+     "....RR......",
+     "....OO......",
+     "...OOOOOO...",
+     "..OWWSSSSO..",
+     "..OWKKKKKO..",
+     "..OSKAKAKO..",
+     "..OSSKKKSO..",
+     "..OTSSSDDO..",
+     "..OTTDDDDOHG",
+     "...OODDOO.GG",
+     "..TT.OO.TT..",
+     "............"
+    ]
+   },
+   "size": 78680,
+   "sha256": "2ddcd1e827d1121fc5988d6f14903bbd438d69080aefa87f6f1d96a99cf3ecc5",
+   "url": "packs/spin-runner-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "street-brawler",
+   "name": "Street Brawler",
+   "short": "BRAWLER",
+   "version": "1.0.0",
+   "category": "action",
+   "color": "#ff8a1e",
+   "description": "Fight through city streets, harbour docks and neon rooftops. Chain punches, jump kick, swing a pipe and take down each stage's boss.",
+   "author": "Retro Console",
+   "tags": [
+    "brawler",
+    "fighting",
+    "scrolling",
+    "action"
+   ],
+   "icon": {
+    "palette": {
+     "S": "#ffccaa",
+     "D": "#c4825e",
+     "R": "#ff004d",
+     "Y": "#ffec27",
+     "W": "#ffffff"
+    },
+    "rows": [
+     "............",
+     "........Y...",
+     "......Y.Y.Y.",
+     "SSSSSS.YYY..",
+     "SDSDSDYYWYY.",
+     "SSSSSSSYWWYY",
+     "SDSDSDYYWYY.",
+     "SSSSSS.YYY.Y",
+     "RRRRR.Y.Y.Y.",
+     "RRRRR...Y...",
+     "............",
+     "............"
+    ]
+   },
+   "size": 79248,
+   "sha256": "5b4b021c4f1589652431946b77f1925951cde156ad7252936f2778caeaaf63b2",
+   "url": "packs/street-brawler-1.0.0.zip",
    "sdk": 1,
    "achievements": 4
   }
