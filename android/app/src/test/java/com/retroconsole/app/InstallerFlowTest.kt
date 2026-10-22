@@ -63,6 +63,46 @@ class InstallerFlowTest {
         assertNull(graph.library.find("space-doodle"))
     }
 
+    @Test fun importingAGameFileAddsATileThatLaunchesTheBundledEmulator() = runBlocking {
+        val nes = ByteArray(24592).also { it[0] = 'N'.code.toByte(); it[1] = 'E'.code.toByte(); it[2] = 'S'.code.toByte(); it[3] = 0x1A }
+        val f = File(dir, "My Own Game (Europe).nes").apply { writeBytes(nes) }
+        val game = graph.installer.importRom(Uri.fromFile(f))
+        assertEquals("My Own Game", game.manifest.name)
+        assertTrue(game.id.startsWith("rom-my-own-game-"))
+        assertEquals("https://appassets.androidplatform.net/installed/${game.id}/index.html", game.url)
+
+        // the entry page loads the bundled emulator + the console's SDK, and the file sits next to it
+        val page = File(graph.library.gamesRoot, "${game.id}/index.html").readText()
+        assertTrue(page.contains("/emu/nes/player.js") && page.contains("/emu/nes/jsnes.min.js") && page.contains("/sdk/retro-sdk.js"))
+        assertTrue(File(graph.library.gamesRoot, "${game.id}/rom.bin").readBytes().contentEquals(nes))
+
+        // ...and it is on the console menu
+        val games = JSONObject(graph.library.libraryJson("en")).getJSONArray("games")
+        assertTrue((0 until games.length()).any { games.getJSONObject(it).getString("id") == game.id })
+        graph.console.launch(game.id)
+        assertEquals(game.id, graph.console.game.value?.id)
+
+        graph.installer.uninstall(game.id)
+        assertFalse(graph.library.isInstalled(game.id))
+        assertFalse(File(graph.library.gamesRoot, "${game.id}/rom.bin").exists())
+    }
+
+    @Test fun gameBoyFilesUseTheGameBoyCore() = runBlocking {
+        val f = File(dir, "pocket.gbc").apply { writeBytes(ByteArray(0x8000)) }
+        val game = graph.installer.importRom(Uri.fromFile(f))
+        assertTrue(File(graph.library.gamesRoot, "${game.id}/index.html").readText().contains("/emu/gb/binjgb.js"))
+        graph.installer.uninstall(game.id)
+    }
+
+    @Test fun unsupportedGameFilesAreRejectedCleanly() = runBlocking {
+        for ((name, bytes) in listOf("notes.nes" to ByteArray(3000) { 65 }, "photo.gb" to ByteArray(100), "pack.zip" to "PK\u0003\u0004".toByteArray() + ByteArray(40000))) {
+            val f = File(dir, name).apply { writeBytes(bytes) }
+            try { graph.installer.importRom(Uri.fromFile(f)); fail("$name should be rejected") }
+            catch (e: InstallException) { assertEquals(name, InstallException.Code.UNSUPPORTED_GAME_FILE, e.code) }
+        }
+        assertTrue(graph.library.installed().isEmpty())
+    }
+
     @Test fun builtInGamesCannotBeReplacedOrRemoved() = runBlocking {
         val manifest = """{"id":"snake","name":"Evil Snake","version":"9.0.0","sdk":1,"category":"arcade","color":"#ff0000"}"""
         try {

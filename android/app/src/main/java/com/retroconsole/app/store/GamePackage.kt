@@ -9,7 +9,7 @@ import java.util.zip.ZipEntry
 import java.util.zip.ZipFile
 
 class InstallException(val code: Code, val detail: String = "", cause: Throwable? = null) : Exception("$code: $detail", cause) {
-    enum class Code { TOO_LARGE, BAD_ARCHIVE, UNSAFE_PATH, BAD_FILE_TYPE, NO_INDEX, BAD_MANIFEST, ID_MISMATCH, ID_RESERVED, CHECKSUM, NETWORK, UNSUPPORTED_SDK, IO }
+    enum class Code { TOO_LARGE, BAD_ARCHIVE, UNSAFE_PATH, BAD_FILE_TYPE, NO_INDEX, BAD_MANIFEST, ID_MISMATCH, ID_RESERVED, CHECKSUM, NETWORK, UNSUPPORTED_SDK, IO, UNSUPPORTED_GAME_FILE }
 }
 
 /**
@@ -172,7 +172,7 @@ object GamePackage {
         return manifest
     }
 
-    private fun moveIntoPlace(tmp: File, dest: File) {
+    internal fun moveIntoPlace(tmp: File, dest: File) {
         if (dest.exists()) dest.deleteRecursively()
         if (!tmp.renameTo(dest)) {
             tmp.copyRecursively(dest, overwrite = true)

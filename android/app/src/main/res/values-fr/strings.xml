@@ -43,6 +43,11 @@
     <string name="add_game_hint">Installez un jeu (.zip ou un seul fichier .html) depuis un fichier, un lien ou un QR code.</string>
     <string name="add_from_file">Depuis un fichier…</string>
     <string name="add_from_link">Depuis un lien…</string>
+    <string name="add_from_rom">Mon propre fichier de jeu (NES / Game Boy)…</string>
+    <string name="rom_title">Importer votre propre jeu ?</string>
+    <string name="rom_body">%1$s\n\nN\'importez que des fichiers de jeu que vous possédez ou avez le droit d\'utiliser. Le fichier reste sur ce téléphone et s\'exécute dans le bac à sable de la console.</string>
+    <string name="err_rom">Ce fichier n\'est pas pris en charge. La console lit les fichiers NES (.nes) et Game Boy / Game Boy Color (.gb, .gbc).</string>
+    <string name="label_rom">Votre fichier de jeu</string>
     <string name="add_scan_qr">Scanner un QR code</string>
     <string name="add_scan_prompt">Visez un QR code de jeu</string>
     <string name="unverified_title">Installer un jeu non vérifié ?</string>
@@ -95,7 +100,7 @@
     <string name="set_reset_progress">Réinitialiser records et sauvegardes</string>
     <string name="set_reset_body">Ceci supprime tous les records, trophées et sauvegardes de cet appareil.</string>
     <string name="about_body">Une console portable 9999-en-1 en couleurs. Les jeux sont de petits paquets HTML5 : ajoutez les vôtres depuis la boutique, un fichier, un lien ou un QR code.</string>
-    <string name="about_font">Police pixel : Press Start 2P © The Press Start 2P Project Authors, licence SIL OFL 1.1.</string>
+    <string name="about_font">Police pixel : Press Start 2P (SIL OFL 1.1). Émulateurs pour vos propres fichiers : jsnes (Apache-2.0) et binjgb (MIT).</string>
     <string name="trophies_title">Trophées et records</string>
     <string name="stat_trophies">Trophées</string>
     <string name="stat_played">Jeux joués</string>

@@ -24,7 +24,7 @@ abstract class StageWebTask : DefaultTask() {
     fun stage() {
         fs.sync {
             from(webDir) {
-                include("sdk/**", "shell/**", "games/builtin/**")
+                include("sdk/**", "shell/**", "emulators/**", "games/builtin/**")
                 exclude("**/.DS_Store")
             }
             into(outDir.dir("web"))

@@ -19,6 +19,8 @@ import okhttp3.OkHttpClient
 sealed interface PendingInstall {
     data class FromUrl(val url: String) : PendingInstall
     data class FromFile(val uri: Uri) : PendingInstall
+    /** A NES / Game Boy game file the user already owns ('Import my own game'). */
+    data class FromRom(val uri: Uri) : PendingInstall
 }
 
 /** Tiny hand-rolled service locator; everything here lives as long as the process. */

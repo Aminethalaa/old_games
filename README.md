@@ -28,6 +28,7 @@ bolts, a **ROTATE** button — but with a **full‑color LCD**, 20+ games, chipt
 | **Screen modes** | Full color · Game Boy green LCD · Brick mono LCD, optional dot‑matrix pixel grid, boot animation, classic 7‑segment side panel (SCORE · HI‑SCORE · NEXT · LEVEL · LIVES) with a running mascot. |
 | **Game Store** | One tap to install, update or remove; **Install all**; categories, search, offline cache, SHA‑256 verified downloads, background auto‑update on Wi‑Fi. |
 | **Add any game** | From a **file** (.zip or a single .html), a **link**, a **QR code** or `retrogame://install?url=…`. Plain HTML5 games run in *compat mode* (D‑pad/A/B → arrows/Space/X). |
+| **Your own games** | **Store → ➕ → "My own game file"** plays NES and Game Boy / Color files you already own, with bundled open-source emulators (files are never provided by the app). See [docs/EMULATORS.md](docs/EMULATORS.md). |
 | **Sound & feel** | Synthesized 8‑bit sound effects + music loops, haptics on buttons and in games. |
 | **Progress** | Per‑game hi‑scores, **trophies**, play time, **save & resume** (the game pauses and saves when you leave). |
 | **Controls** | Touch, Bluetooth/USB gamepads and keyboards (arrows/WASD, Space/Z = A, X = B, Enter = S/P, Select/Esc = Home), left‑handed layout, adjustable key size. |
@@ -112,6 +113,7 @@ python3 tools/build_store.py                    # packs it into store/ so every 
 
 * **[docs/GAME_SDK.md](docs/GAME_SDK.md)** — manifest, lifecycle, full API, quality bar.
 * **[docs/STORE.md](docs/STORE.md)** — publishing, updates, hosting your own store, sharing by QR code.
+* **[docs/EMULATORS.md](docs/EMULATORS.md)** — the "import my own game file" emulators (NES, Game Boy / Color).
 
 ## How it fits together
 
@@ -119,6 +121,7 @@ python3 tools/build_store.py                    # packs it into store/ so every 
 web/sdk/retro-sdk.js     game SDK (LCD stage, input, audio, HUD, bridge)      ┐ bundled into the APK
 web/shell/home.*         the console's menu + boot animation, drawn on the LCD │ (assets/web)
 web/games/builtin/*      games that ship inside the APK                        ┘
+web/emulators/*          bundled emulator cores + players for the user's own game files (NES, Game Boy)
 web/games/store/*  ──tools/build_store.py──▶  store/catalog.json + store/packs/*.zip  ──GitHub raw──▶  Game Store
 android/                 Kotlin + Jetpack Compose shell: console UI, WebView "LCD", JS bridge, store, installer,
                          settings, trophies, WorkManager auto‑update
@@ -134,5 +137,6 @@ through a small `RetroNative.postMessage` bridge (hi‑scores, trophies, saves, 
 
 * Pixel font: **Press Start 2P** © The Press Start 2P Project Authors — SIL Open Font License 1.1
   (`web/sdk/fonts/OFL.txt`).
+* Emulators for your own game files: **jsnes** (Apache-2.0) and **binjgb** (MIT) — see `THIRD_PARTY_NOTICES.md`.
 * All games, art, sound effects and music loops are original. Game *mechanics* are classics; names and artwork are not
   taken from any commercial title.

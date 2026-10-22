@@ -43,6 +43,11 @@
     <string name="add_game_hint">ثبّت لعبة (ملف .zip أو ملف .html واحد) من ملف أو رابط أو رمز QR.</string>
     <string name="add_from_file">من ملف…</string>
     <string name="add_from_link">من رابط…</string>
+    <string name="add_from_rom">ملف لعبة خاص بي (NES / Game Boy)…</string>
+    <string name="rom_title">استيراد لعبتك الخاصة؟</string>
+    <string name="rom_body">%1$s\n\nاستورد فقط ملفات الألعاب التي تملكها أو لديك الحق في استخدامها. يبقى الملف على هذا الهاتف ويعمل داخل بيئة الجهاز المعزولة.</string>
+    <string name="err_rom">هذا الملف غير مدعوم. يشغّل الجهاز ملفات NES (‏.nes) وGame Boy / Game Boy Color (‏.gb، ‏.gbc).</string>
+    <string name="label_rom">ملف لعبتك</string>
     <string name="add_scan_qr">مسح رمز QR</string>
     <string name="add_scan_prompt">وجّه الكاميرا إلى رمز QR للعبة</string>
     <string name="unverified_title">تثبيت لعبة غير موثقة؟</string>
@@ -95,7 +100,7 @@
     <string name="set_reset_progress">إعادة ضبط الأرقام والحفظ</string>
     <string name="set_reset_body">سيحذف هذا كل الأرقام القياسية والكؤوس والألعاب المحفوظة على هذا الجهاز.</string>
     <string name="about_body">جهاز محمول ملوّن 9999 في 1. الألعاب حزم HTML5 صغيرة: أضف ألعابك من المتجر أو ملف أو رابط أو رمز QR.</string>
-    <string name="about_font">خط البكسل: Press Start 2P © The Press Start 2P Project Authors، رخصة SIL OFL 1.1.</string>
+    <string name="about_font">خط البكسل: Press Start 2P (رخصة SIL OFL 1.1). محاكيات لملفات ألعابك: jsnes (Apache-2.0) وbinjgb (MIT).</string>
     <string name="trophies_title">الكؤوس والأرقام القياسية</string>
     <string name="stat_trophies">الكؤوس</string>
     <string name="stat_played">ألعاب لُعبت</string>

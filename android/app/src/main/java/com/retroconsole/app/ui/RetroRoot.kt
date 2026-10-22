@@ -94,12 +94,14 @@ fun PendingInstallHost(graph: AppGraph) {
     val source = when (p) {
         is PendingInstall.FromUrl -> p.url
         is PendingInstall.FromFile -> p.uri.lastPathSegment ?: p.uri.toString()
+        is PendingInstall.FromRom -> p.uri.lastPathSegment ?: p.uri.toString()
     }
+    val isRom = p is PendingInstall.FromRom
     if (progress == null) {
         AlertDialog(
             onDismissRequest = { graph.pendingInstall.value = null },
-            title = { Text(stringResource(R.string.unverified_title)) },
-            text = { Text(stringResource(R.string.unverified_body, source)) },
+            title = { Text(stringResource(if (isRom) R.string.rom_title else R.string.unverified_title)) },
+            text = { Text(stringResource(if (isRom) R.string.rom_body else R.string.unverified_body, source)) },
             confirmButton = {
                 TextButton(onClick = {
                     scope.launch {
@@ -108,6 +110,7 @@ fun PendingInstallHost(graph: AppGraph) {
                             val g = when (p) {
                                 is PendingInstall.FromUrl -> graph.installer.installFromUrl(p.url) { progress = it }
                                 is PendingInstall.FromFile -> graph.installer.installFromUri(p.uri) { progress = it }
+                                is PendingInstall.FromRom -> graph.installer.importRom(p.uri) { progress = it }
                             }
                             Toast.makeText(ctx, ctx.getString(R.string.msg_installed, g.manifest.name), Toast.LENGTH_LONG).show()
                         } catch (e: InstallException) {

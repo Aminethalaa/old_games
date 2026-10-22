@@ -610,7 +610,7 @@
 
   /* ------------------------------------------------------------------ input */
   var BUTTONS = ['up', 'down', 'left', 'right', 'a', 'b'];
-  var held = { up: false, down: false, left: false, right: false, a: false, b: false };
+  var held = { up: false, down: false, left: false, right: false, a: false, b: false, start: false };
   var edge = {}, relEdge = {}, repState = {}, pressQueue = [], buttonListeners = [], repeatTimers = {};
   var gameClock = 0;
 
@@ -636,7 +636,18 @@
 
   function setButton(name, down) {
     resumeAudio();
-    if (name === 'start') { if (down) startPressed(); emitButton('start', down ? 'down' : 'up'); return; }
+    if (name === 'start') {
+      down = !!down;
+      // rawStart games (emulators) get START as an ordinary button while playing; S/P still starts/resumes from READY/PAUSED/OVER
+      if (state.cfg && state.cfg.rawStart && state.mode === 'play') {
+        if (held.start !== down) { held.start = down; if (down) { edge.start = true; pressQueue.push('start'); } else relEdge.start = true; }
+      } else {
+        if (held.start && !down) { held.start = false; relEdge.start = true; }
+        if (down) startPressed();
+      }
+      emitButton('start', down ? 'down' : 'up');
+      return;
+    }
     if (!(name in held)) return;
     down = !!down;
     if (held[name] === down) return;
@@ -657,7 +668,7 @@
       relEdge[name] = true; clearTimeout(repeatTimers[name]); emitButton(name, 'up');
     }
   }
-  function releaseAll() { BUTTONS.forEach(function (b) { if (held[b]) setButton(b, false); }); }
+  function releaseAll() { BUTTONS.forEach(function (b) { if (held[b]) setButton(b, false); }); if (held.start) setButton('start', false); }
 
   var KEYMAP = { ArrowUp: 'up', KeyW: 'up', ArrowDown: 'down', KeyS: 'down', ArrowLeft: 'left', KeyA: 'left', ArrowRight: 'right', KeyD: 'right',
     KeyZ: 'a', Space: 'a', KeyJ: 'a', KeyX: 'b', KeyK: 'b', Enter: 'start', KeyP: 'start' };
@@ -769,6 +780,7 @@
         if (c.dpad) h += esc(tr('dpad')) + ': ' + esc(c.dpad) + '<br>';
         if (c.a) h += 'A: ' + esc(c.a) + '<br>';
         if (c.b) h += 'B: ' + esc(c.b) + '<br>';
+        if (c.start) h += 'S/P: ' + esc(c.start) + '<br>';
         h += '</div>';
       }
       h += '</div>';
@@ -876,7 +888,7 @@
   var Retro = {
     version: SDK_VERSION, STAGE_W: STAGE_W, STAGE_H: STAGE_H,
     colors: COLORS, pal: PAL, util: util, draw: draw, sprite: makeSprite, fx: fx,
-    sfx: sfx, music: musicApi, input: input, hud: hud, i18n: tr, init: INIT, settings: settings,
+    sfx: sfx, music: musicApi, audio: { context: function () { return ensureAudio(); }, output: function () { ensureAudio(); return sfxBus; } }, input: input, hud: hud, i18n: tr, init: INIT, settings: settings,
     vibrate: vibrate, toast: toast, achieve: achieve, post: post, onReady: onReady, reportError: reportError,
     store: {
       get: function (k, d) { var v = lsGet(INIT.key('kv:' + k)); if (v == null) return d; try { return JSON.parse(v); } catch (e) { return d; } },

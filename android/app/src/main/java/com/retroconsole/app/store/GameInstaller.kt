@@ -79,6 +79,42 @@ class GameInstaller(
         } finally { file.delete() }
     }
 
+    /**
+     * "Import my own game": a NES / Game Boy game file the user picked. Nothing is downloaded or bundled by the app;
+     * the file is copied into app storage and shown as a new tile on the console menu.
+     */
+    suspend fun importRom(uri: Uri, onProgress: (Float) -> Unit = {}): InstalledGame = withContext(Dispatchers.IO) {
+        val name = displayName(uri) ?: "game"
+        val file = File(cacheDir, "rom-${System.nanoTime()}.bin")
+        try {
+            val input = context.contentResolver.openInputStream(uri) ?: throw InstallException(InstallException.Code.IO, "cannot open")
+            input.use { src ->
+                file.outputStream().use { out ->
+                    val buf = ByteArray(64 * 1024)
+                    var total = 0L
+                    while (true) {
+                        val n = src.read(buf)
+                        if (n < 0) break
+                        total += n
+                        if (total > RomPackage.MAX_ROM_BYTES) throw InstallException(InstallException.Code.TOO_LARGE)
+                        out.write(buf, 0, n)
+                    }
+                }
+            }
+            onProgress(0.6f)
+            val kind = RomPackage.detect(file, name) ?: throw InstallException(InstallException.Code.UNSUPPORTED_GAME_FILE, name)
+            val template = try {
+                context.assets.open("web/emulators/${kind.coreDir}/rom-index.html").bufferedReader().use { it.readText() }
+            } catch (e: IOException) { throw InstallException(InstallException.Code.IO, "emulator missing", e) }
+            lock.withLock {
+                val m = RomPackage.install(file, name, kind, library.gamesRoot, template)
+                _changes.value = _changes.value + 1
+                onProgress(1f)
+                InstalledGame(m, builtin = false, installedAt = System.currentTimeMillis())
+            }
+        } finally { file.delete() }
+    }
+
     fun uninstall(id: String) {
         if (id in library.builtinIds()) return
         File(library.gamesRoot, id).deleteRecursively()

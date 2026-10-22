@@ -43,6 +43,11 @@
     <string name="add_game_hint">Install a game package (.zip or a single .html game) from a file, a link or a QR code.</string>
     <string name="add_from_file">From a file…</string>
     <string name="add_from_link">From a link…</string>
+    <string name="add_from_rom">My own game file (NES / Game Boy)…</string>
+    <string name="rom_title">Import your own game?</string>
+    <string name="rom_body">%1$s\n\nOnly import game files you own or have the right to use. The file stays on this phone and runs inside the console\'s sandbox.</string>
+    <string name="err_rom">That isn\'t a supported game file. The console plays NES (.nes) and Game Boy / Game Boy Color (.gb, .gbc) files.</string>
+    <string name="label_rom">Your game file</string>
     <string name="add_scan_qr">Scan a QR code</string>
     <string name="add_scan_prompt">Point at a game QR code</string>
     <string name="unverified_title">Install unverified game?</string>
@@ -95,7 +100,7 @@
     <string name="set_reset_progress">Reset hi-scores &amp; saves</string>
     <string name="set_reset_body">This deletes every hi-score, trophy and saved game on this device.</string>
     <string name="about_body">A colourful 9999-in-1 handheld. Games are tiny HTML5 packages: add yours from the Game Store, a file, a link or a QR code.</string>
-    <string name="about_font">Pixel font: Press Start 2P © The Press Start 2P Project Authors, SIL Open Font License 1.1.</string>
+    <string name="about_font">Pixel font: Press Start 2P (SIL OFL 1.1). Emulators for your own game files: jsnes (Apache-2.0) and binjgb (MIT).</string>
     <string name="trophies_title">Trophies &amp; records</string>
     <string name="stat_trophies">Trophies</string>
     <string name="stat_played">Games played</string>

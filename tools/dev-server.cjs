@@ -17,7 +17,7 @@ const ROOT = path.resolve(__dirname, '..', 'web');
 const MIME = {
   '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8',
   '.css': 'text/css; charset=utf-8', '.png': 'image/png', '.svg': 'image/svg+xml', '.ttf': 'font/ttf', '.woff2': 'font/woff2',
-  '.ogg': 'audio/ogg', '.mp3': 'audio/mpeg', '.wav': 'audio/wav', '.jpg': 'image/jpeg', '.txt': 'text/plain; charset=utf-8',
+  '.ogg': 'audio/ogg', '.mp3': 'audio/mpeg', '.wav': 'audio/wav', '.jpg': 'image/jpeg', '.txt': 'text/plain; charset=utf-8', '.wasm': 'application/wasm',
 };
 
 function listGames(dir, kind) {
@@ -33,8 +33,15 @@ function library() {
   return { sdk: 1, lang: 'en', games: [...listGames('builtin', 'builtin'), ...listGames('store', 'installed')] };
 }
 
+let EXTRA_INSTALLED = null;   // optional extra folder of "installed" games (tests put generated game-file entries here)
+
 function resolveFile(urlPath) {
   let m;
+  if (urlPath.startsWith('/emu/')) return path.join(ROOT, 'emulators', urlPath.slice(5));
+  if (EXTRA_INSTALLED && (m = urlPath.match(/^\/installed\/([^/]+)\/(.*)$/))) {
+    const extra = path.join(EXTRA_INSTALLED, m[1], m[2] || 'index.html');
+    if (fs.existsSync(extra)) return extra;
+  }
   if (urlPath.startsWith('/sdk/')) return path.join(ROOT, 'sdk', urlPath.slice(5));
   if (urlPath.startsWith('/shell/')) return path.join(ROOT, 'shell', urlPath.slice(7));
   if ((m = urlPath.match(/^\/builtin\/([^/]+)\/(.*)$/))) return path.join(ROOT, 'games', 'builtin', m[1], m[2] || 'index.html');
@@ -62,6 +69,7 @@ function appCsp() {
 const CSP = appCsp();
 
 function createServer(opts = {}) {
+  if (opts.extraInstalled) EXTRA_INSTALLED = opts.extraInstalled;
   const csp = opts.csp !== false && CSP;
   return http.createServer((req, res) => {
     const url = new URL(req.url, 'http://x');
@@ -69,7 +77,7 @@ function createServer(opts = {}) {
     if (p === '/') { res.writeHead(200, { 'Content-Type': MIME['.html'] }); return res.end(indexPage()); }
     if (p === '/__library.json') { res.writeHead(200, { 'Content-Type': MIME['.json'] }); return res.end(JSON.stringify(library())); }
     let file = resolveFile(p);
-    if (!file || !file.startsWith(ROOT)) { res.writeHead(404); return res.end('not found'); }
+    if (!file || !(file.startsWith(ROOT) || (EXTRA_INSTALLED && file.startsWith(EXTRA_INSTALLED)))) { res.writeHead(404); return res.end('not found'); }
     if (fs.existsSync(file) && fs.statSync(file).isDirectory()) file = path.join(file, 'index.html');
     fs.readFile(file, (err, buf) => {
       if (err) { res.writeHead(404); return res.end('not found'); }

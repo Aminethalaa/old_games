@@ -187,6 +187,7 @@ class LcdView(context: Context, private val listener: LcdBridgeListener) {
                 .setDomain(LcdHost.DOMAIN)
                 .addPathHandler("/sdk/", AssetsHandler(ctx, "web/sdk"))
                 .addPathHandler("/shell/", AssetsHandler(ctx, "web/shell"))
+                .addPathHandler("/emu/", AssetsHandler(ctx, "web/emulators"))
                 .addPathHandler("/builtin/", AssetsHandler(ctx, "web/games/builtin"))
                 .addPathHandler("/installed/", FilesHandler(File(ctx.filesDir, "games")))
                 .build()

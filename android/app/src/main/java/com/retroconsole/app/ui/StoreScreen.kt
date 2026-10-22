@@ -87,6 +87,7 @@ internal fun Context.errorText(e: InstallException): String = getString(
         InstallException.Code.UNSUPPORTED_SDK -> R.string.err_sdk
         InstallException.Code.NETWORK -> R.string.err_network
         InstallException.Code.IO -> R.string.err_io
+        InstallException.Code.UNSUPPORTED_GAME_FILE -> R.string.err_rom
     },
 )
 
@@ -142,6 +143,9 @@ fun StoreScreen(onBack: () -> Unit, onPlay: (String) -> Unit, openAdd: Boolean, 
 
     val pickFile = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
         if (uri != null) graph.pendingInstall.value = PendingInstall.FromFile(uri)
+    }
+    val pickRom = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
+        if (uri != null) graph.pendingInstall.value = PendingInstall.FromRom(uri)
     }
     val scan = rememberLauncherForActivityResult(ScanContract()) { result ->
         val text = result.contents ?: return@rememberLauncherForActivityResult
@@ -240,7 +244,7 @@ fun StoreScreen(onBack: () -> Unit, onPlay: (String) -> Unit, openAdd: Boolean, 
                     )
                 }
                 items(local, key = { "local-" + it.id }) { g ->
-                    LocalCard(g.manifest.name, g.manifest.description, g.manifest.icon, g.manifest.color, g.builtin, onPlay = { onPlay(g.id) }, onRemove = { confirmRemove = g.id })
+                    LocalCard(g.manifest.name, g.manifest.description, g.manifest.icon, g.manifest.color, g.builtin, g.id.startsWith("rom-"), onPlay = { onPlay(g.id) }, onRemove = { confirmRemove = g.id })
                 }
             }
         }
@@ -255,6 +259,7 @@ fun StoreScreen(onBack: () -> Unit, onPlay: (String) -> Unit, openAdd: Boolean, 
                     Text(stringResource(R.string.add_game_hint), fontSize = 13.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
                     OutlinedButton(onClick = { showAdd = false; pickFile.launch(arrayOf("application/zip", "application/x-zip-compressed", "application/octet-stream", "text/html")) }, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.add_from_file)) }
                     OutlinedButton(onClick = { showAdd = false; showLink = true }, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.add_from_link)) }
+                    OutlinedButton(onClick = { showAdd = false; pickRom.launch(arrayOf("*/*")) }, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.add_from_rom)) }
                     OutlinedButton(onClick = {
                         showAdd = false
                         scan.launch(ScanOptions().setDesiredBarcodeFormats(ScanOptions.QR_CODE).setPrompt(ctx.getString(R.string.add_scan_prompt)).setBeepEnabled(false).setOrientationLocked(false))
@@ -355,14 +360,14 @@ private fun StoreCard(entry: CatalogEntry, status: GameStatus, progress: Float?,
 }
 
 @Composable
-private fun LocalCard(name: String, description: String, icon: com.retroconsole.app.data.PixelIcon?, color: String, builtin: Boolean, onPlay: () -> Unit, onRemove: () -> Unit) {
+private fun LocalCard(name: String, description: String, icon: com.retroconsole.app.data.PixelIcon?, color: String, builtin: Boolean, isRom: Boolean, onPlay: () -> Unit, onRemove: () -> Unit) {
     CardFrame {
         Row(verticalAlignment = Alignment.CenterVertically) {
             PixelIconView(icon, color, 58.dp)
             Spacer(Modifier.width(12.dp))
             Column(Modifier.weight(1f)) {
                 Text(name, fontWeight = FontWeight.Bold, fontSize = 16.sp, maxLines = 1, overflow = TextOverflow.Ellipsis)
-                Text(stringResource(if (builtin) R.string.label_builtin else R.string.label_imported), fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                Text(stringResource(if (builtin) R.string.label_builtin else if (isRom) R.string.label_rom else R.string.label_imported), fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 if (description.isNotBlank()) Text(description, fontSize = 12.sp, maxLines = 2, overflow = TextOverflow.Ellipsis)
             }
             OutlinedButton(onClick = onPlay, contentPadding = PaddingValues(horizontal = 12.dp), border = BorderStroke(1.dp, RetroColors.Green)) {
