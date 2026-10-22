@@ -1,0 +1,74 @@
+{
+  "id": "mine-finder",
+  "name": "Mine Finder",
+  "short": "MINES",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "puzzle",
+  "layout": "full",
+  "size": [
+    272,
+    328
+  ],
+  "color": "#00e436",
+  "description": "Sweep the minefield with the D-pad cursor. Numbers count the neighbouring mines, flags mark the danger. Every cleared board adds more mines.",
+  "controls": {
+    "dpad": "Move cursor",
+    "a": "Reveal / chord on a number",
+    "b": "Flag / unflag"
+  },
+  "tags": [
+    "puzzle",
+    "logic",
+    "mines"
+  ],
+  "achievements": [
+    {
+      "id": "first-sweep",
+      "name": "First Sweep",
+      "desc": "Clear a minefield"
+    },
+    {
+      "id": "chord",
+      "name": "Chord Master",
+      "desc": "Open the neighbours of a satisfied number"
+    },
+    {
+      "id": "speedy",
+      "name": "Speed Sweeper",
+      "desc": "Clear a board in under 60 seconds"
+    },
+    {
+      "id": "level5",
+      "name": "Danger Zone",
+      "desc": "Reach level 5"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "K": "#b8c0dc",
+      "W": "#ffffff",
+      "Y": "#ffec27",
+      "O": "#ffa300",
+      "G": "#00e436",
+      "g": "#008751",
+      "R": "#ff004d",
+      "D": "#5d6890"
+    },
+    "rows": [
+      "............",
+      ".......YO...",
+      "......O.....",
+      "....KKKKK...",
+      "..K.KWWKK.K.",
+      "...KKWKKKK..",
+      ".KKKKKKKKDK.",
+      "...KKKKKDD..",
+      "..K.KKKDD.K.",
+      "....KDDDD...",
+      "GGGGGGGGGGGG",
+      "gggggggggggg"
+    ]
+  }
+}

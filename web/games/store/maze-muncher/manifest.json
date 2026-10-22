@@ -1,0 +1,68 @@
+{
+  "id": "maze-muncher",
+  "name": "Maze Muncher",
+  "short": "MUNCHER",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "arcade",
+  "layout": "full",
+  "size": [
+    152,
+    180
+  ],
+  "color": "#ffec27",
+  "description": "Gobble every dot in the neon maze while four ghosts with four different brains hunt you. Grab a power pellet and turn the tables!",
+  "controls": {
+    "dpad": "Steer (turns are queued)"
+  },
+  "tags": [
+    "maze",
+    "chase",
+    "arcade"
+  ],
+  "achievements": [
+    {
+      "id": "ghost",
+      "name": "Ghost Snack",
+      "desc": "Eat a ghost"
+    },
+    {
+      "id": "quad",
+      "name": "Ghost Buster",
+      "desc": "Eat all four ghosts with a single power pellet"
+    },
+    {
+      "id": "fruit",
+      "name": "Fruit Salad",
+      "desc": "Eat a bonus fruit"
+    },
+    {
+      "id": "maze1",
+      "name": "Maze Master",
+      "desc": "Clear the first maze"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "Y": "#ffec27",
+      "P": "#ffccaa",
+      "R": "#ff004d",
+      "W": "#fff1e8"
+    },
+    "rows": [
+      "............",
+      "..YYYYY.....",
+      ".YYYYYYY....",
+      "YYYYYYY.....",
+      "YYYYY.......",
+      "YYYYY...P.P.",
+      "YYYYYYY.....",
+      ".YYYYYYY.RR.",
+      "..YYYYY.RRRR",
+      "........RWRW",
+      "........RRRR",
+      "........R.R."
+    ]
+  }
+}

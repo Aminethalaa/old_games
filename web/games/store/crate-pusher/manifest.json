@@ -1,0 +1,78 @@
+{
+  "id": "crate-pusher",
+  "name": "Crate Pusher",
+  "short": "CRATES",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "puzzle",
+  "layout": "full",
+  "size": [
+    272,
+    328
+  ],
+  "color": "#e8903a",
+  "description": "Push every crate onto a glowing target. Plan ahead: crates can only be pushed, never pulled. 14 hand-made warehouse levels, from easy to brain-melting.",
+  "controls": {
+    "dpad": "Walk & push",
+    "a": "Restart (hold: level select)",
+    "b": "Undo move"
+  },
+  "tags": [
+    "puzzle",
+    "warehouse",
+    "push",
+    "levels"
+  ],
+  "achievements": [
+    {
+      "id": "first-clear",
+      "name": "First Delivery",
+      "desc": "Clear level 1"
+    },
+    {
+      "id": "five-clear",
+      "name": "Warehouse Hand",
+      "desc": "Clear level 5"
+    },
+    {
+      "id": "perfect",
+      "name": "Perfect Plan",
+      "desc": "Clear a level in the minimum number of moves"
+    },
+    {
+      "id": "all-clear",
+      "name": "Crate Boss",
+      "desc": "Clear every level"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "d": "#6b3314",
+      "l": "#ffc46b",
+      "o": "#e8903a",
+      "p": "#c4601a",
+      "q": "#a24b14",
+      "G": "#2ed573",
+      "g": "#0e5a34",
+      "w": "#eaffd8",
+      "y": "#ffec27",
+      "P": "#ff77a8",
+      "n": "#1a2245"
+    },
+    "rows": [
+      "..dddddddd..",
+      "..dlllllld..",
+      "..dlpoopqd..",
+      "..dloppoqd..",
+      "..dloppoqd..",
+      "..dlpoopqd..",
+      "..dlqqqqqd..",
+      "..dddddddd..",
+      "GGGGnnnnnyyn",
+      "GwwGnnnnyPPy",
+      "GwwGnnnnyPPy",
+      "ggggnnnnnyyn"
+    ]
+  }
+}

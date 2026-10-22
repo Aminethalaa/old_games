@@ -1,0 +1,73 @@
+{
+  "id": "road-hopper",
+  "name": "Road Hopper",
+  "short": "HOPPER",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "arcade",
+  "layout": "full",
+  "size": [
+    132,
+    164
+  ],
+  "color": "#00e436",
+  "description": "Hop across a busy road and a wild river to reach the five home bays. Dodge cars, ride the logs and watch out for sinking turtles!",
+  "controls": {
+    "dpad": "Hop (one jump per press)"
+  },
+  "tags": [
+    "frog",
+    "crossing",
+    "arcade"
+  ],
+  "achievements": [
+    {
+      "id": "first-home",
+      "name": "Home Sweet Home",
+      "desc": "Get a frog safely home"
+    },
+    {
+      "id": "fly",
+      "name": "Fly Snack",
+      "desc": "Eat a fly in a home bay"
+    },
+    {
+      "id": "level-clear",
+      "name": "Safe Crossing",
+      "desc": "Fill all five home bays"
+    },
+    {
+      "id": "score3000",
+      "name": "Frog Prince",
+      "desc": "Score 3000 points"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "g": "#00e436",
+      "G": "#008751",
+      "l": "#a8ff8a",
+      "w": "#fff1e8",
+      "k": "#10131c",
+      "N": "#ab5236",
+      "n": "#d98a55",
+      "B": "#29adff",
+      "b": "#1d47d4"
+    },
+    "rows": [
+      "...ww..ww...",
+      "..wkw..wkw..",
+      "..gggggggg..",
+      ".gg.gllg.gg.",
+      ".g..gllg..g.",
+      "....gggg....",
+      "...gggggg...",
+      "..ggGggGgg..",
+      ".ggg.gg.ggg.",
+      ".gg..gg..gg.",
+      "NNnnNNNNnnNN",
+      "BbBBbBBBbBBb"
+    ]
+  }
+}

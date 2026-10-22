@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 11 and older: back up hi-scores, trophies, settings and saved games (downloaded games are re-installable). -->
+<full-backup-content>
+    <include domain="sharedpref" path="progress.xml" />
+    <include domain="sharedpref" path="settings.xml" />
+    <include domain="file" path="saves/" />
+</full-backup-content>

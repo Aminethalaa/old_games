@@ -1,0 +1,76 @@
+{
+  "id": "brick-smash",
+  "name": "Brick Smash",
+  "short": "SMASH",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "classic",
+  "layout": "classic",
+  "size": [
+    160,
+    320
+  ],
+  "color": "#ff77a8",
+  "description": "Bounce the ball off your paddle and smash rainbow walls. Catch falling power-ups: wide paddle, multi-ball, slow ball and extra lives.",
+  "controls": {
+    "dpad": "Move paddle (left/right)",
+    "a": "Launch ball"
+  },
+  "tags": [
+    "breakout",
+    "bricks",
+    "paddle",
+    "power-ups"
+  ],
+  "achievements": [
+    {
+      "id": "wall-down",
+      "name": "Wall Down",
+      "desc": "Clear the first wall of bricks"
+    },
+    {
+      "id": "combo10",
+      "name": "Combo Crusher",
+      "desc": "Smash 10 bricks without touching the paddle"
+    },
+    {
+      "id": "juggler",
+      "name": "Ball Juggler",
+      "desc": "Have 3 balls in play at once"
+    },
+    {
+      "id": "round2",
+      "name": "Round Two",
+      "desc": "Reach level 6"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "R": "#ff004d",
+      "r": "#a8002f",
+      "O": "#ffa300",
+      "o": "#b36b00",
+      "Y": "#ffec27",
+      "y": "#b8a400",
+      "G": "#00e436",
+      "g": "#00902a",
+      "W": "#fff1e8",
+      "P": "#ff77a8"
+    },
+    "rows": [
+      "............",
+      "RRRrRRRrRRRr",
+      "RRRrRRRrRRRr",
+      "OOOoOOOoOOOo",
+      "OOOoOOOoOOOo",
+      "YYYyYYYyYYYy",
+      "YYYyYYYyYYYy",
+      "GGGgGGGgGGGg",
+      "GGGgGGGgGGGg",
+      ".....WW.....",
+      ".....WW.....",
+      "..PPPPPPPP.."
+    ]
+  }
+}

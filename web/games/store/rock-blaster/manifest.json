@@ -1,0 +1,73 @@
+{
+  "id": "rock-blaster",
+  "name": "Rock Blaster",
+  "short": "ROCKS",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "arcade",
+  "layout": "full",
+  "size": [
+    272,
+    328
+  ],
+  "color": "#29adff",
+  "description": "Drift, spin and blast your way through a neon asteroid field. Rocks split, saucers shoot back and the hyperspace jump is your last resort.",
+  "controls": {
+    "dpad": "Left/Right turn, Up thrust",
+    "a": "Fire (hold)",
+    "b": "Hyperspace jump"
+  },
+  "tags": [
+    "asteroids",
+    "space",
+    "arcade",
+    "vector"
+  ],
+  "achievements": [
+    {
+      "id": "wave1",
+      "name": "Field Cleared",
+      "desc": "Clear the first asteroid field"
+    },
+    {
+      "id": "saucer",
+      "name": "Saucer Down",
+      "desc": "Shoot down a flying saucer"
+    },
+    {
+      "id": "warp",
+      "name": "Warp Drive",
+      "desc": "Escape with a hyperspace jump"
+    },
+    {
+      "id": "score5000",
+      "name": "Neon Ace",
+      "desc": "Score 5000 points"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "L": "#7dff7a",
+      "P": "#ff77a8",
+      "C": "#3de2ff",
+      "Y": "#ffec27",
+      "W": "#fff1e8",
+      "D": "#1c4a3c"
+    },
+    "rows": [
+      "..LLL.....P.",
+      ".L...LL..P.P",
+      "L......L..P.",
+      "L.DD....L...",
+      "L.DDD...L...",
+      ".L....LL....",
+      "..L..L......",
+      "...LL.......",
+      "....Y.......",
+      ".....C......",
+      "....CWC.....",
+      "...CC.CC...."
+    ]
+  }
+}

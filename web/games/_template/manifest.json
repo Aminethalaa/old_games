@@ -1,0 +1,35 @@
+{
+  "id": "my-game",
+  "name": "My Game",
+  "short": "MYGAME",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "You",
+  "category": "arcade",
+  "layout": "full",
+  "size": [136, 164],
+  "color": "#ffec27",
+  "description": "Collect the coins, dodge the red blocks. A starting point for your own game.",
+  "controls": { "dpad": "Move", "a": "Dash" },
+  "tags": ["template"],
+  "achievements": [
+    { "id": "coins10", "name": "Coin Collector", "desc": "Collect 10 coins in one run" }
+  ],
+  "icon": {
+    "palette": { "Y": "#ffec27", "O": "#ffa300", "R": "#ff004d", "B": "#29adff" },
+    "rows": [
+      "............",
+      "....YYYY....",
+      "...YOOOOY...",
+      "..YOOYYOOY..",
+      "..YOYOOYOY..",
+      "..YOYOOYOY..",
+      "..YOOYYOOY..",
+      "...YOOOOY...",
+      "....YYYY....",
+      "............",
+      ".RR......BB.",
+      ".RR......BB."
+    ]
+  }
+}

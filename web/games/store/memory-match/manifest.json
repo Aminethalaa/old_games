@@ -1,0 +1,73 @@
+{
+  "id": "memory-match",
+  "name": "Memory Match",
+  "short": "MEMORY",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "puzzle",
+  "layout": "full",
+  "size": [
+    272,
+    328
+  ],
+  "color": "#ff77a8",
+  "description": "Flip the cards and find every pair before the clock runs out. Chain matches for a combo multiplier and clear bigger boards on each level.",
+  "controls": {
+    "dpad": "Move cursor",
+    "a": "Flip card"
+  },
+  "tags": [
+    "puzzle",
+    "memory",
+    "cards",
+    "pairs"
+  ],
+  "achievements": [
+    {
+      "id": "first-pair",
+      "name": "First Pair",
+      "desc": "Match your first pair"
+    },
+    {
+      "id": "combo-4",
+      "name": "Combo Streak",
+      "desc": "Chain 4 matches in a row"
+    },
+    {
+      "id": "sharp",
+      "name": "Sharp Memory",
+      "desc": "Clear a board with 2 mistakes or fewer"
+    },
+    {
+      "id": "level5",
+      "name": "Memory Master",
+      "desc": "Reach level 5"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "V": "#b46bff",
+      "v": "#7a3fc4",
+      "B": "#4da6ff",
+      "P": "#ff7ac8",
+      "K": "#2a2f45",
+      "W": "#fff1e8",
+      "R": "#ff004d"
+    },
+    "rows": [
+      ".....KKKKKKK",
+      ".....KWWWWWK",
+      ".....KRRWRRK",
+      ".....KRRRRRK",
+      "VVVVVKWRRRWK",
+      "VBBBBKWWRWWK",
+      "VBPPvKWWWWWK",
+      "VBPPvKKKKKKK",
+      "VBPPvV......",
+      "VBPPvV......",
+      "VBvvvV......",
+      "VVVVVV......"
+    ]
+  }
+}

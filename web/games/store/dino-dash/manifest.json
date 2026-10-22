@@ -1,0 +1,38 @@
+{
+  "id": "dino-dash",
+  "name": "Dino Dash",
+  "short": "DINO",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "action",
+  "layout": "full",
+  "size": [136, 164],
+  "color": "#3ddc84",
+  "description": "Run through the desert, leap over cacti and boulders, duck under birds. Day turns to night as you speed up.",
+  "controls": { "dpad": "Up jump, Down duck", "a": "Jump (hold = higher)", "b": "Duck / fast-fall" },
+  "tags": ["runner", "endless", "dino"],
+  "achievements": [
+    { "id": "warm-up", "name": "Warm Up", "desc": "Reach 100 points" },
+    { "id": "bird-brain", "name": "Bird Dodger", "desc": "Dodge 10 birds in one run" },
+    { "id": "rock-hopper", "name": "Rock Hopper", "desc": "Leap over 5 boulders in one run" },
+    { "id": "marathon", "name": "Desert Marathon", "desc": "Reach 1000 points" }
+  ],
+  "icon": {
+    "palette": { "G": "#3ddc84", "W": "#ffffff", "K": "#1d2b53", "O": "#ff8a3d", "B": "#fff1a8", "C": "#2fd26b", "Y": "#ffd36b", "D": "#c98a3a" },
+    "rows": [
+      "............",
+      "...GGGGGG...",
+      "..GGGGGGGG..",
+      "..GGWKGGGG..",
+      "..GGGGGGGGG.",
+      "O.GGGGGGG...",
+      "OOGGGGGG..C.",
+      ".OGGGBBG.CC.",
+      "..GGGBBG.CC.",
+      "...GG.GG.CC.",
+      "...GG.GG..C.",
+      "YYYYYYYYYYYY"
+    ]
+  }
+}

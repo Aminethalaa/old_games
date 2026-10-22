@@ -1,0 +1,49 @@
+name: Games & Store
+
+on:
+  push:
+    branches: [main]
+    paths: ['web/**', 'store/**', 'tools/**', '.github/workflows/games.yml']
+  pull_request:
+    paths: ['web/**', 'store/**', 'tools/**', '.github/workflows/games.yml']
+  workflow_dispatch:
+
+jobs:
+  games:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install headless browser
+        working-directory: tools/test
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - name: Smoke-test every game (random play, errors, blank screens, save/resume)
+        working-directory: tools/test
+        run: node smoke.cjs
+        env:
+          SHOTS: '1'
+      - name: Home screen renders
+        working-directory: tools/test
+        run: node home-shot.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: game-screenshots
+          path: tools/test/out/*.png
+          if-no-files-found: ignore
+
+  store:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Store packs and catalog are up to date
+        run: python3 tools/build_store.py --check
+      - name: Translations are complete
+        run: python3 tools/gen_strings.py && git diff --exit-code android/app/src/main/res/values*

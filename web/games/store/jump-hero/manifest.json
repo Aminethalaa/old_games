@@ -1,0 +1,38 @@
+{
+  "id": "jump-hero",
+  "name": "Jump Hero",
+  "short": "JUMPHERO",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "action",
+  "layout": "full",
+  "size": [136, 164],
+  "color": "#ff3d5e",
+  "description": "A bite-sized platformer: run, jump and throw fireballs through grassland, crystal cave and fire castle. Beat them all and the world loops, harder.",
+  "controls": { "dpad": "Move", "a": "Jump (hold = higher)", "b": "Run / throw fireball" },
+  "tags": ["platformer", "adventure", "levels"],
+  "achievements": [
+    { "id": "stomper", "name": "Stomper", "desc": "Squash an enemy by jumping on it" },
+    { "id": "fire-starter", "name": "Fire Starter", "desc": "Defeat 5 enemies with fireballs" },
+    { "id": "coin-hoarder", "name": "Coin Hoarder", "desc": "Collect 30 coins" },
+    { "id": "hero-of-the-land", "name": "Hero of the Land", "desc": "Clear all three levels" }
+  ],
+  "icon": {
+    "palette": { "R": "#ff3d5e", "K": "#1d2b53", "S": "#ffd0a8", "B": "#2f8bff", "G": "#5be04a", "D": "#9a5b2e", "W": "#ffffff", "Y": "#ffd23a", "L": "#3a2a8a", "N": "#7ec8ff" },
+    "rows": [
+      "NNNNNNNNNNNN",
+      "NNNRRRRRNNNN",
+      "NNRRRRRRRNNN",
+      "NNSSKSKSSNYN",
+      "NNSSSSSSSNYN",
+      "NYBBBBBBBNNN",
+      "NNBBYYBBBNNN",
+      "NNBBBBBBBNNN",
+      "NNNLLNLLNNNN",
+      "NNNLLNLLNNNN",
+      "GGGGGGGGGGGG",
+      "DDDDDDDDDDDD"
+    ]
+  }
+}

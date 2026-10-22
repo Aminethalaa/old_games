@@ -1,0 +1,747 @@
+{
+ "schema": 1,
+ "name": "Retro Console Game Store",
+ "games": [
+  {
+   "id": "alien-blaster",
+   "name": "Alien Blaster",
+   "short": "ALIENS",
+   "version": "1.0.0",
+   "category": "arcade",
+   "color": "#b455ff",
+   "description": "Hold the line against marching pixel aliens. Hide behind crumbling shields, snipe the bonus UFO and survive ever faster waves.",
+   "author": "Retro Console",
+   "tags": [
+    "shooter",
+    "space",
+    "arcade"
+   ],
+   "icon": {
+    "palette": {
+     "G": "#00e436",
+     "W": "#fff1e8",
+     "Y": "#ffec27",
+     "C": "#3de2ff",
+     "B": "#29adff"
+    },
+    "rows": [
+     "............",
+     "..G......G..",
+     "...G....G...",
+     "..GGGGGGGG..",
+     ".GGWGGGGWGG.",
+     "GGGGGGGGGGGG",
+     "G.GGGGGGGG.G",
+     "G.G......G.G",
+     "...GG..GG...",
+     ".....Y......",
+     "....BBBB....",
+     "..CCCCCCCC.."
+    ]
+   },
+   "size": 19437,
+   "sha256": "eb68b8bee3ccdfa2a5260fe2547b235a4f5ff4f9b72bb2f328cf9ce6501e7cf4",
+   "url": "packs/alien-blaster-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "maze-muncher",
+   "name": "Maze Muncher",
+   "short": "MUNCHER",
+   "version": "1.0.0",
+   "category": "arcade",
+   "color": "#ffec27",
+   "description": "Gobble every dot in the neon maze while four ghosts with four different brains hunt you. Grab a power pellet and turn the tables!",
+   "author": "Retro Console",
+   "tags": [
+    "maze",
+    "chase",
+    "arcade"
+   ],
+   "icon": {
+    "palette": {
+     "Y": "#ffec27",
+     "P": "#ffccaa",
+     "R": "#ff004d",
+     "W": "#fff1e8"
+    },
+    "rows": [
+     "............",
+     "..YYYYY.....",
+     ".YYYYYYY....",
+     "YYYYYYY.....",
+     "YYYYY.......",
+     "YYYYY...P.P.",
+     "YYYYYYY.....",
+     ".YYYYYYY.RR.",
+     "..YYYYY.RRRR",
+     "........RWRW",
+     "........RRRR",
+     "........R.R."
+    ]
+   },
+   "size": 26060,
+   "sha256": "023f732716f33d52d986f6a0bbd7ce7ad8b39cc0e72875a091dbbcbde6277753",
+   "url": "packs/maze-muncher-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "road-hopper",
+   "name": "Road Hopper",
+   "short": "HOPPER",
+   "version": "1.0.0",
+   "category": "arcade",
+   "color": "#00e436",
+   "description": "Hop across a busy road and a wild river to reach the five home bays. Dodge cars, ride the logs and watch out for sinking turtles!",
+   "author": "Retro Console",
+   "tags": [
+    "frog",
+    "crossing",
+    "arcade"
+   ],
+   "icon": {
+    "palette": {
+     "g": "#00e436",
+     "G": "#008751",
+     "l": "#a8ff8a",
+     "w": "#fff1e8",
+     "k": "#10131c",
+     "N": "#ab5236",
+     "n": "#d98a55",
+     "B": "#29adff",
+     "b": "#1d47d4"
+    },
+    "rows": [
+     "...ww..ww...",
+     "..wkw..wkw..",
+     "..gggggggg..",
+     ".gg.gllg.gg.",
+     ".g..gllg..g.",
+     "....gggg....",
+     "...gggggg...",
+     "..ggGggGgg..",
+     ".ggg.gg.ggg.",
+     ".gg..gg..gg.",
+     "NNnnNNNNnnNN",
+     "BbBBbBBBbBBb"
+    ]
+   },
+   "size": 24121,
+   "sha256": "c45f6bdc682544ed4b98e45a6c308483b5c27138241356ce515f6c06df533719",
+   "url": "packs/road-hopper-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "rock-blaster",
+   "name": "Rock Blaster",
+   "short": "ROCKS",
+   "version": "1.0.0",
+   "category": "arcade",
+   "color": "#29adff",
+   "description": "Drift, spin and blast your way through a neon asteroid field. Rocks split, saucers shoot back and the hyperspace jump is your last resort.",
+   "author": "Retro Console",
+   "tags": [
+    "asteroids",
+    "space",
+    "arcade",
+    "vector"
+   ],
+   "icon": {
+    "palette": {
+     "L": "#7dff7a",
+     "P": "#ff77a8",
+     "C": "#3de2ff",
+     "Y": "#ffec27",
+     "W": "#fff1e8",
+     "D": "#1c4a3c"
+    },
+    "rows": [
+     "..LLL.....P.",
+     ".L...LL..P.P",
+     "L......L..P.",
+     "L.DD....L...",
+     "L.DDD...L...",
+     ".L....LL....",
+     "..L..L......",
+     "...LL.......",
+     "....Y.......",
+     ".....C......",
+     "....CWC.....",
+     "...CC.CC...."
+    ]
+   },
+   "size": 23325,
+   "sha256": "c2b47886ea50f8a250e56db12aebfd8b7061f3e6c6e7a91cf8dda674c4a5c8ab",
+   "url": "packs/rock-blaster-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "star-fighter",
+   "name": "Star Fighter",
+   "short": "STARFIGHT",
+   "version": "1.0.0",
+   "category": "arcade",
+   "color": "#ffa300",
+   "description": "Swarms swoop in on curved paths and dive-bomb your fighter. Beware the tractor beam, rescue a captured ship for dual fire and survive the challenge stages.",
+   "author": "Retro Console",
+   "tags": [
+    "shooter",
+    "space",
+    "arcade"
+   ],
+   "icon": {
+    "palette": {
+     "G": "#00e436",
+     "P": "#b455ff",
+     "Y": "#ffec27",
+     "R": "#ff004d",
+     "W": "#fff1e8",
+     "C": "#3de2ff",
+     "B": "#29adff"
+    },
+    "rows": [
+     "P..G....G..P",
+     "PGGGGGGGGGGP",
+     ".GGWGGGGWGG.",
+     "..GGGBBGGG..",
+     "...GGGGGG...",
+     "....CCCC....",
+     ".....CC.....",
+     ".....Y......",
+     "......W.....",
+     ".....WCW....",
+     ".R..WWCWW.R.",
+     "RRWWWWWWWWRR"
+    ]
+   },
+   "size": 34228,
+   "sha256": "2309977c98e468b5cae485faffa424dd39afbe7c2193cd91a95c2925db8cf95a",
+   "url": "packs/star-fighter-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "crate-pusher",
+   "name": "Crate Pusher",
+   "short": "CRATES",
+   "version": "1.0.0",
+   "category": "puzzle",
+   "color": "#e8903a",
+   "description": "Push every crate onto a glowing target. Plan ahead: crates can only be pushed, never pulled. 14 hand-made warehouse levels, from easy to brain-melting.",
+   "author": "Retro Console",
+   "tags": [
+    "puzzle",
+    "warehouse",
+    "push",
+    "levels"
+   ],
+   "icon": {
+    "palette": {
+     "d": "#6b3314",
+     "l": "#ffc46b",
+     "o": "#e8903a",
+     "p": "#c4601a",
+     "q": "#a24b14",
+     "G": "#2ed573",
+     "g": "#0e5a34",
+     "w": "#eaffd8",
+     "y": "#ffec27",
+     "P": "#ff77a8",
+     "n": "#1a2245"
+    },
+    "rows": [
+     "..dddddddd..",
+     "..dlllllld..",
+     "..dlpoopqd..",
+     "..dloppoqd..",
+     "..dloppoqd..",
+     "..dlpoopqd..",
+     "..dlqqqqqd..",
+     "..dddddddd..",
+     "GGGGnnnnnyyn",
+     "GwwGnnnnyPPy",
+     "GwwGnnnnyPPy",
+     "ggggnnnnnyyn"
+    ]
+   },
+   "size": 22271,
+   "sha256": "0ac65f7b9d0390c15a3e01446377a0fae434dc23017edf4ad2a4d9ecacf2c544",
+   "url": "packs/crate-pusher-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "four-in-row",
+   "name": "Four in a Row",
+   "short": "CONNECT4",
+   "version": "1.0.0",
+   "category": "puzzle",
+   "color": "#ffec27",
+   "description": "Drop discs and connect four before the CPU does. The computer gets smarter with every level you beat.",
+   "author": "Retro Console",
+   "tags": [
+    "puzzle",
+    "board",
+    "versus",
+    "cpu"
+   ],
+   "icon": {
+    "palette": {
+     "B": "#2a4fd6",
+     "b": "#5b86ff",
+     "d": "#1a2f8f",
+     "r": "#ff3b5c",
+     "Y": "#ffd23a",
+     "n": "#0b0e26"
+    },
+    "rows": [
+     "............",
+     ".bbbbbbbbbd.",
+     ".bnnBYYBrrd.",
+     ".bnnBYYBrrd.",
+     ".bBBBBBBBBd.",
+     ".bYYBrrBYYd.",
+     ".bYYBrrBYYd.",
+     ".bBBBBBBBBd.",
+     ".brrBYYBYYd.",
+     ".brrBYYBYYd.",
+     ".dddddddddd.",
+     "............"
+    ]
+   },
+   "size": 19787,
+   "sha256": "0e37be4d16b256979038a1dbd8d4d69f298f1bffed05db4c76790b91e73fce0c",
+   "url": "packs/four-in-row-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "memory-match",
+   "name": "Memory Match",
+   "short": "MEMORY",
+   "version": "1.0.0",
+   "category": "puzzle",
+   "color": "#ff77a8",
+   "description": "Flip the cards and find every pair before the clock runs out. Chain matches for a combo multiplier and clear bigger boards on each level.",
+   "author": "Retro Console",
+   "tags": [
+    "puzzle",
+    "memory",
+    "cards",
+    "pairs"
+   ],
+   "icon": {
+    "palette": {
+     "V": "#b46bff",
+     "v": "#7a3fc4",
+     "B": "#4da6ff",
+     "P": "#ff7ac8",
+     "K": "#2a2f45",
+     "W": "#fff1e8",
+     "R": "#ff004d"
+    },
+    "rows": [
+     ".....KKKKKKK",
+     ".....KWWWWWK",
+     ".....KRRWRRK",
+     ".....KRRRRRK",
+     "VVVVVKWRRRWK",
+     "VBBBBKWWRWWK",
+     "VBPPvKWWWWWK",
+     "VBPPvKKKKKKK",
+     "VBPPvV......",
+     "VBPPvV......",
+     "VBvvvV......",
+     "VVVVVV......"
+    ]
+   },
+   "size": 18681,
+   "sha256": "0c5f2fbd2b089ddbf127d3728814ddf62390ced2dce59d0edee1e3ffc01da7e9",
+   "url": "packs/memory-match-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "merge-2048",
+   "name": "Merge 2048",
+   "short": "MERGE",
+   "version": "1.0.0",
+   "category": "puzzle",
+   "color": "#ffa300",
+   "description": "Slide the colourful tiles, merge matching numbers and chase the 2048 tile. Undo charges refill every time you reach a new tile.",
+   "author": "Retro Console",
+   "tags": [
+    "puzzle",
+    "numbers",
+    "merge",
+    "2048"
+   ],
+   "icon": {
+    "palette": {
+     "A": "#5ee7ff",
+     "a": "#2a9bc4",
+     "B": "#ffd23a",
+     "b": "#c4921a",
+     "C": "#ff6f4a",
+     "c": "#b83a22",
+     "D": "#a066ff",
+     "d": "#6a3cc4",
+     "W": "#fff1e8"
+    },
+    "rows": [
+     "WAAAA..WBBBB",
+     "AAAAA..BBBBB",
+     "AAAAA..BBBBB",
+     "AAAAA..BBBBB",
+     "aaaaa..bbbbb",
+     "............",
+     "............",
+     "WCCCC..WDDDD",
+     "CCCCC..DDDDD",
+     "CCCCC..DDDDD",
+     "CCCCC..DDDDD",
+     "ccccc..ddddd"
+    ]
+   },
+   "size": 15521,
+   "sha256": "7079fd28ec4e386ec7d772490eedf3e79e48161bcf1d9e1a560c11fe331161c6",
+   "url": "packs/merge-2048-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "mine-finder",
+   "name": "Mine Finder",
+   "short": "MINES",
+   "version": "1.0.0",
+   "category": "puzzle",
+   "color": "#00e436",
+   "description": "Sweep the minefield with the D-pad cursor. Numbers count the neighbouring mines, flags mark the danger. Every cleared board adds more mines.",
+   "author": "Retro Console",
+   "tags": [
+    "puzzle",
+    "logic",
+    "mines"
+   ],
+   "icon": {
+    "palette": {
+     "K": "#b8c0dc",
+     "W": "#ffffff",
+     "Y": "#ffec27",
+     "O": "#ffa300",
+     "G": "#00e436",
+     "g": "#008751",
+     "R": "#ff004d",
+     "D": "#5d6890"
+    },
+    "rows": [
+     "............",
+     ".......YO...",
+     "......O.....",
+     "....KKKKK...",
+     "..K.KWWKK.K.",
+     "...KKWKKKK..",
+     ".KKKKKKKKDK.",
+     "...KKKKKDD..",
+     "..K.KKKDD.K.",
+     "....KDDDD...",
+     "GGGGGGGGGGGG",
+     "gggggggggggg"
+    ]
+   },
+   "size": 15281,
+   "sha256": "f5e426054c29418e0aaee70963024e0c85836407d5b36e931b075a99f421cc10",
+   "url": "packs/mine-finder-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "slide-puzzle",
+   "name": "Slide Puzzle",
+   "short": "SLIDE",
+   "version": "1.0.0",
+   "category": "puzzle",
+   "color": "#29adff",
+   "description": "Slide the colourful numbered tiles back into order. Starts with 3x3, then 4x4 and 5x5, and every shuffle is guaranteed solvable.",
+   "author": "Retro Console",
+   "tags": [
+    "puzzle",
+    "sliding",
+    "numbers",
+    "classic"
+   ],
+   "icon": {
+    "palette": {
+     "n": "#10163a",
+     "m": "#2a3558",
+     "W": "#fff1e8",
+     "A": "#29adff",
+     "B": "#6a7cff",
+     "C": "#b455ff",
+     "D": "#3de2ff",
+     "E": "#7a8cff",
+     "F": "#ff77a8",
+     "G": "#00e436",
+     "H": "#ffec27"
+    },
+    "rows": [
+     "nnnnnnnnnnnn",
+     "nWAAnWBBnWCC",
+     "nAAAnBBBnCCC",
+     "nAAAnBBBnCCC",
+     "nnnnnnnnnnnn",
+     "nWDDnWEEnWFF",
+     "nDDDnEEEnFFF",
+     "nDDDnEEEnFFF",
+     "nnnnnnnnnnnn",
+     "nWGGnWHHnmmm",
+     "nGGGnHHHnmnm",
+     "nGGGnHHHnmmm"
+    ]
+   },
+   "size": 15670,
+   "sha256": "a64a10c622a2e71feabc517b35f5f41a935d0f8bc2e01d1f99f93bc17a2e1dec",
+   "url": "packs/slide-puzzle-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "chirp-flap",
+   "name": "Chirp Flap",
+   "short": "CHIRP",
+   "version": "1.0.0",
+   "category": "action",
+   "color": "#ffd23f",
+   "description": "Flap your little chick through the colourful towers. The gaps shrink, the speed climbs, and coins hide in the gaps.",
+   "author": "Retro Console",
+   "tags": [
+    "flappy",
+    "endless",
+    "bird"
+   ],
+   "icon": {
+    "palette": {
+     "Y": "#ffd23f",
+     "O": "#ff6a00",
+     "W": "#ffffff",
+     "K": "#1d2b53",
+     "y": "#ff9f1c",
+     "P": "#ff5d8f",
+     "B": "#fff4b0",
+     "D": "#5a2a0a"
+    },
+    "rows": [
+     "PP........PP",
+     "PP........PP",
+     "PP..DDDD..PP",
+     "PP.DYYYYD.PP",
+     "PP.DYYWKDOOP",
+     "PP.DyYYYYOOP",
+     "PP.DyyYYYD.P",
+     "PP.DYYBBYD.P",
+     "PP..DYYYD..P",
+     "PP...DDD...P",
+     "PP........PP",
+     "PP........PP"
+    ]
+   },
+   "size": 21349,
+   "sha256": "597b7d8065d4f6c558b3e15cbe9ca8558b9441d6317fd8d22caeb0f0e9e187bf",
+   "url": "packs/chirp-flap-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "dino-dash",
+   "name": "Dino Dash",
+   "short": "DINO",
+   "version": "1.0.0",
+   "category": "action",
+   "color": "#3ddc84",
+   "description": "Run through the desert, leap over cacti and boulders, duck under birds. Day turns to night as you speed up.",
+   "author": "Retro Console",
+   "tags": [
+    "runner",
+    "endless",
+    "dino"
+   ],
+   "icon": {
+    "palette": {
+     "G": "#3ddc84",
+     "W": "#ffffff",
+     "K": "#1d2b53",
+     "O": "#ff8a3d",
+     "B": "#fff1a8",
+     "C": "#2fd26b",
+     "Y": "#ffd36b",
+     "D": "#c98a3a"
+    },
+    "rows": [
+     "............",
+     "...GGGGGG...",
+     "..GGGGGGGG..",
+     "..GGWKGGGG..",
+     "..GGGGGGGGG.",
+     "O.GGGGGGG...",
+     "OOGGGGGG..C.",
+     ".OGGGBBG.CC.",
+     "..GGGBBG.CC.",
+     "...GG.GG.CC.",
+     "...GG.GG..C.",
+     "YYYYYYYYYYYY"
+    ]
+   },
+   "size": 24099,
+   "sha256": "f3f7f2d95c9a6ba440c3a5dc56e358a8e997268fbd3021419c1ef5fd603cd274",
+   "url": "packs/dino-dash-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "jump-hero",
+   "name": "Jump Hero",
+   "short": "JUMPHERO",
+   "version": "1.0.0",
+   "category": "action",
+   "color": "#ff3d5e",
+   "description": "A bite-sized platformer: run, jump and throw fireballs through grassland, crystal cave and fire castle. Beat them all and the world loops, harder.",
+   "author": "Retro Console",
+   "tags": [
+    "platformer",
+    "adventure",
+    "levels"
+   ],
+   "icon": {
+    "palette": {
+     "R": "#ff3d5e",
+     "K": "#1d2b53",
+     "S": "#ffd0a8",
+     "B": "#2f8bff",
+     "G": "#5be04a",
+     "D": "#9a5b2e",
+     "W": "#ffffff",
+     "Y": "#ffd23a",
+     "L": "#3a2a8a",
+     "N": "#7ec8ff"
+    },
+    "rows": [
+     "NNNNNNNNNNNN",
+     "NNNRRRRRNNNN",
+     "NNRRRRRRRNNN",
+     "NNSSKSKSSNYN",
+     "NNSSSSSSSNYN",
+     "NYBBBBBBBNNN",
+     "NNBBYYBBBNNN",
+     "NNBBBBBBBNNN",
+     "NNNLLNLLNNNN",
+     "NNNLLNLLNNNN",
+     "GGGGGGGGGGGG",
+     "DDDDDDDDDDDD"
+    ]
+   },
+   "size": 45072,
+   "sha256": "22a8040c7aaf3564726d799fb012af0c69984a6b88b7cc40a2581abbe6f2b03b",
+   "url": "packs/jump-hero-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "neon-runner",
+   "name": "Neon Runner",
+   "short": "NEON",
+   "version": "1.0.0",
+   "category": "action",
+   "color": "#ff2fd0",
+   "description": "Race down a synthwave highway in three lanes. Jump the barriers, slide under the beams, grab neon coins, magnets and shields.",
+   "author": "Retro Console",
+   "tags": [
+    "runner",
+    "endless",
+    "synthwave",
+    "3d"
+   ],
+   "icon": {
+    "palette": {
+     "P": "#2a0a5a",
+     "M": "#ff2fd0",
+     "C": "#3de2ff",
+     "Y": "#ffe45e",
+     "O": "#ff9e3d",
+     "S": "#ff5ea8",
+     "D": "#10062a",
+     "W": "#ffffff"
+    },
+    "rows": [
+     "DDDDDDDDDDDD",
+     "DDDDYYYYDDDD",
+     "DDDYYYYYYDDD",
+     "DDSSSSSSSSDD",
+     "DDOOOOOOOODD",
+     "MDDDDPPDDDDC",
+     "MMDDDCCDDDCC",
+     "DMMDDDWDDCCD",
+     "DDMMDWWWDCDD",
+     "DDDMMDDDCCDD",
+     "DDDDMMDCCDDD",
+     "DDDDDMCCDDDD"
+    ]
+   },
+   "size": 27338,
+   "sha256": "bce0053bd9dab81be28e2beeefaab3a4d9e70352e3de48845ddd2952e6afd095",
+   "url": "packs/neon-runner-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "sky-hopper",
+   "name": "Sky Hopper",
+   "short": "SKYHOP",
+   "version": "1.0.0",
+   "category": "action",
+   "color": "#ff9a3c",
+   "description": "Bounce up from the clouds into outer space. Dodge or blast monsters, grab rockets and springs, never fall.",
+   "author": "Retro Console",
+   "tags": [
+    "climber",
+    "endless",
+    "platform"
+   ],
+   "icon": {
+    "palette": {
+     "O": "#ff9a3c",
+     "d": "#d96a1f",
+     "W": "#ffffff",
+     "K": "#1d2b53",
+     "R": "#ff3d6e",
+     "G": "#6be04a",
+     "B": "#3d9bf0",
+     "Y": "#ffec27",
+     "N": "#0a0d3a"
+    },
+    "rows": [
+     "NNNNNNNNNNNN",
+     "NNNNRRNNNYNN",
+     "NNNNRRNNNNNN",
+     "NNNOOOOOONNN",
+     "NNOOOOOOOONN",
+     "NNOWKOOWKONN",
+     "NNOOOOOOOONN",
+     "NNdOOOOOOdNN",
+     "NNNdddddNNNN",
+     "NNNNdNNdNNNN",
+     "NGGGGGGGGGGN",
+     "NNGGGNNNNNNN"
+    ]
+   },
+   "size": 29438,
+   "sha256": "19656d2901ada551abe66271343496fdfba9554e021674203814d053759f06a3",
+   "url": "packs/sky-hopper-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  }
+ ]
+}

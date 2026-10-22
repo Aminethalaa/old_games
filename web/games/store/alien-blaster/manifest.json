@@ -1,0 +1,70 @@
+{
+  "id": "alien-blaster",
+  "name": "Alien Blaster",
+  "short": "ALIENS",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "arcade",
+  "layout": "classic",
+  "size": [
+    160,
+    320
+  ],
+  "color": "#b455ff",
+  "description": "Hold the line against marching pixel aliens. Hide behind crumbling shields, snipe the bonus UFO and survive ever faster waves.",
+  "controls": {
+    "dpad": "Move cannon",
+    "a": "Fire (hold)"
+  },
+  "tags": [
+    "shooter",
+    "space",
+    "arcade"
+  ],
+  "achievements": [
+    {
+      "id": "wave1",
+      "name": "Invasion Repelled",
+      "desc": "Clear the first wave"
+    },
+    {
+      "id": "ufo",
+      "name": "UFO Hunter",
+      "desc": "Shoot down a bonus UFO"
+    },
+    {
+      "id": "bombs10",
+      "name": "Bomb Squad",
+      "desc": "Shoot down 10 alien bombs in one game"
+    },
+    {
+      "id": "score5000",
+      "name": "Star Defender",
+      "desc": "Score 5000 points"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "G": "#00e436",
+      "W": "#fff1e8",
+      "Y": "#ffec27",
+      "C": "#3de2ff",
+      "B": "#29adff"
+    },
+    "rows": [
+      "............",
+      "..G......G..",
+      "...G....G...",
+      "..GGGGGGGG..",
+      ".GGWGGGGWGG.",
+      "GGGGGGGGGGGG",
+      "G.GGGGGGGG.G",
+      "G.G......G.G",
+      "...GG..GG...",
+      ".....Y......",
+      "....BBBB....",
+      "..CCCCCCCC.."
+    ]
+  }
+}

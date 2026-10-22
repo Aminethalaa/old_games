@@ -1,0 +1,72 @@
+{
+  "id": "four-in-row",
+  "name": "Four in a Row",
+  "short": "CONNECT4",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "puzzle",
+  "layout": "full",
+  "size": [
+    272,
+    328
+  ],
+  "color": "#ffec27",
+  "description": "Drop discs and connect four before the CPU does. The computer gets smarter with every level you beat.",
+  "controls": {
+    "dpad": "Choose column",
+    "a": "Drop disc"
+  },
+  "tags": [
+    "puzzle",
+    "board",
+    "versus",
+    "cpu"
+  ],
+  "achievements": [
+    {
+      "id": "first-win",
+      "name": "First Blood",
+      "desc": "Beat the CPU once"
+    },
+    {
+      "id": "diagonal",
+      "name": "Diagonal Strike",
+      "desc": "Win with a diagonal line"
+    },
+    {
+      "id": "quick-win",
+      "name": "Quick Draw",
+      "desc": "Win in 6 moves or fewer"
+    },
+    {
+      "id": "level5",
+      "name": "Grandmaster",
+      "desc": "Reach level 5"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "B": "#2a4fd6",
+      "b": "#5b86ff",
+      "d": "#1a2f8f",
+      "r": "#ff3b5c",
+      "Y": "#ffd23a",
+      "n": "#0b0e26"
+    },
+    "rows": [
+      "............",
+      ".bbbbbbbbbd.",
+      ".bnnBYYBrrd.",
+      ".bnnBYYBrrd.",
+      ".bBBBBBBBBd.",
+      ".bYYBrrBYYd.",
+      ".bYYBrrBYYd.",
+      ".bBBBBBBBBd.",
+      ".brrBYYBYYd.",
+      ".brrBYYBYYd.",
+      ".dddddddddd.",
+      "............"
+    ]
+  }
+}

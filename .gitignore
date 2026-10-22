@@ -1,0 +1,15 @@
+# tests / tooling output
+tools/test/out/
+tools/test/node_modules/
+tools/test/package-lock.json
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+# android
+android/local.properties
+android/.gradle/
+android/build/
+android/app/build/
+*.keystore
+*.jks

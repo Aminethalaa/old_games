@@ -1,0 +1,38 @@
+{
+  "id": "neon-runner",
+  "name": "Neon Runner",
+  "short": "NEON",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "action",
+  "layout": "full",
+  "size": [136, 164],
+  "color": "#ff2fd0",
+  "description": "Race down a synthwave highway in three lanes. Jump the barriers, slide under the beams, grab neon coins, magnets and shields.",
+  "controls": { "dpad": "Left / right change lane", "a": "Jump", "b": "Slide (or dive)" },
+  "tags": ["runner", "endless", "synthwave", "3d"],
+  "achievements": [
+    { "id": "coin-rush", "name": "Coin Rush", "desc": "Collect 40 coins in one run" },
+    { "id": "shield-saver", "name": "Shield Saver", "desc": "Block a crash with a shield" },
+    { "id": "magnet-master", "name": "Magnet Master", "desc": "Pull in 10 coins with the magnet" },
+    { "id": "synth-rider", "name": "Synth Rider", "desc": "Reach 1500 points" }
+  ],
+  "icon": {
+    "palette": { "P": "#2a0a5a", "M": "#ff2fd0", "C": "#3de2ff", "Y": "#ffe45e", "O": "#ff9e3d", "S": "#ff5ea8", "D": "#10062a", "W": "#ffffff" },
+    "rows": [
+      "DDDDDDDDDDDD",
+      "DDDDYYYYDDDD",
+      "DDDYYYYYYDDD",
+      "DDSSSSSSSSDD",
+      "DDOOOOOOOODD",
+      "MDDDDPPDDDDC",
+      "MMDDDCCDDDCC",
+      "DMMDDDWDDCCD",
+      "DDMMDWWWDCDD",
+      "DDDMMDDDCCDD",
+      "DDDDMMDCCDDD",
+      "DDDDDMCCDDDD"
+    ]
+  }
+}

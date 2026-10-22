@@ -1,0 +1,38 @@
+{
+  "id": "sky-hopper",
+  "name": "Sky Hopper",
+  "short": "SKYHOP",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "action",
+  "layout": "full",
+  "size": [136, 164],
+  "color": "#ff9a3c",
+  "description": "Bounce up from the clouds into outer space. Dodge or blast monsters, grab rockets and springs, never fall.",
+  "controls": { "dpad": "Steer (screen wraps)", "a": "Shoot up", "b": "Shoot up" },
+  "tags": ["climber", "endless", "platform"],
+  "achievements": [
+    { "id": "monster-hunter", "name": "Monster Hunter", "desc": "Defeat 3 monsters in one climb" },
+    { "id": "rocketeer", "name": "Lift Off!", "desc": "Grab a propeller hat or a rocket" },
+    { "id": "high-flyer", "name": "High Flyer", "desc": "Score 500 points" },
+    { "id": "stargazer", "name": "Stargazer", "desc": "Reach outer space" }
+  ],
+  "icon": {
+    "palette": { "O": "#ff9a3c", "d": "#d96a1f", "W": "#ffffff", "K": "#1d2b53", "R": "#ff3d6e", "G": "#6be04a", "B": "#3d9bf0", "Y": "#ffec27", "N": "#0a0d3a" },
+    "rows": [
+      "NNNNNNNNNNNN",
+      "NNNNRRNNNYNN",
+      "NNNNRRNNNNNN",
+      "NNNOOOOOONNN",
+      "NNOOOOOOOONN",
+      "NNOWKOOWKONN",
+      "NNOOOOOOOONN",
+      "NNdOOOOOOdNN",
+      "NNNdddddNNNN",
+      "NNNNdNNdNNNN",
+      "NGGGGGGGGGGN",
+      "NNGGGNNNNNNN"
+    ]
+  }
+}
