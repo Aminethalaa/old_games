@@ -6,6 +6,7 @@
 
     python3 tools/build_store.py            # (re)build
     python3 tools/build_store.py --check    # CI: fail if the committed store is out of date
+    python3 tools/build_store.py --skip a,b # leave unfinished games out (works with --check too)
 
 The catalog URL is configurable in the app (Settings -> Game Store) and pack URLs are relative to it,
 so the whole `store/` folder can be hosted anywhere (GitHub raw, GitHub Pages, your own server).
@@ -102,12 +103,20 @@ def sha256(path):
     return h.hexdigest()
 
 
+def skipped_ids():
+    for i, a in enumerate(sys.argv):
+        if a == "--skip" and i + 1 < len(sys.argv):
+            return set(x for x in sys.argv[i + 1].split(",") if x)
+    return set()
+
+
 def build(out_dir):
+    skip = skipped_ids()
     builtin_ids = set(os.listdir(BUILTIN_SRC)) if os.path.isdir(BUILTIN_SRC) else set()
     packs_dir = os.path.join(out_dir, "packs")
     os.makedirs(packs_dir, exist_ok=True)
     entries, wanted = [], set()
-    ids = sorted(d for d in os.listdir(STORE_SRC) if not d.startswith((".", "_")) and os.path.isdir(os.path.join(STORE_SRC, d))) if os.path.isdir(STORE_SRC) else []
+    ids = sorted(d for d in os.listdir(STORE_SRC) if not d.startswith((".", "_")) and d not in skip and os.path.isdir(os.path.join(STORE_SRC, d))) if os.path.isdir(STORE_SRC) else []
     problems = []
     for gid in ids:
         mpath = os.path.join(STORE_SRC, gid, "manifest.json")

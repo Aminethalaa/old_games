@@ -1,0 +1,38 @@
+{
+  "id": "scaffold-rush",
+  "name": "Scaffold Rush",
+  "short": "SCAFFOLD",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "arcade",
+  "layout": "full",
+  "size": [136, 164],
+  "color": "#ff6a2b",
+  "description": "Climb an unfinished tower while a mischievous robot rolls tyres down the girders. Jump the hazards, grab the mallet, ride lifts and belts, then pop every rivet to bring the whole structure down.",
+  "controls": { "dpad": "Walk / climb ladders", "a": "Jump", "b": "Jump" },
+  "tags": ["arcade", "climbing", "platformer", "retro"],
+  "achievements": [
+    { "id": "top-climber", "name": "Top of the Tower", "desc": "Reach the flag on the girder screen" },
+    { "id": "mallet-man", "name": "Mallet Man", "desc": "Smash 5 hazards with the mallet in one run" },
+    { "id": "leaper", "name": "Leaper", "desc": "Jump over 10 hazards in one run" },
+    { "id": "tower-down", "name": "Tower Down", "desc": "Remove every rivet and topple the tower" }
+  ],
+  "icon": {
+    "palette": { "h": "#ffd23a", "H": "#c98a00", "s": "#ffccaa", "e": "#1d2b53", "v": "#ff7a2a", "V": "#ffec27", "b": "#29adff", "k": "#2a2438", "t": "#8a92b8", "O": "#e8551f", "o": "#ffd9b0" },
+    "rows": [
+      "...hhhh.....",
+      "..hhhhhh....",
+      ".HHHHHHHH...",
+      "..ssssss....",
+      "..sesses....",
+      "..ssssss.kk.",
+      ".vvVVVVvkttk",
+      ".vvvvvvvkttk",
+      ".bbbbbbb.kk.",
+      "..bb..bb....",
+      "..kk..kk....",
+      "OoOOOoOOOoOO"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "rune-dungeon",
+  "name": "Rune Dungeon",
+  "short": "RUNES",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "action",
+  "layout": "full",
+  "size": [136, 164],
+  "color": "#4a86ff",
+  "description": "A top-down dungeon adventure. Slash slimes, bats and shielded skeletons, find keys, push blocks onto floor plates, shoot crystal switches with your bow and beat two bosses across two dungeons.",
+  "controls": { "dpad": "Walk / push blocks", "a": "Sword slash", "b": "Shoot arrow" },
+  "tags": ["adventure", "dungeon", "action", "puzzle"],
+  "achievements": [
+    { "id": "key-turner", "name": "Lock Picker", "desc": "Open a locked door with a key" },
+    { "id": "sharpshooter", "name": "Sharpshooter", "desc": "Hit an enemy or a crystal with an arrow" },
+    { "id": "slime-slayer", "name": "Slime Slayer", "desc": "Defeat the Gloop King" },
+    { "id": "rune-hero", "name": "Rune Hero", "desc": "Defeat the Rune Wraith and restore the rune" }
+  ],
+  "icon": {
+    "palette": { "o": "#8a3d12", "O": "#ff9a2e", "S": "#ffd0a8", "e": "#1d2b53", "b": "#1b4fb3", "B": "#3d8bff", "g": "#fff0c0", "n": "#7a4a22", "w": "#e8f0ff", "y": "#ffd23a" },
+    "rows": [
+      "...oooo...ww",
+      "..oOOOOo..ww",
+      ".oOOOOOOo.ww",
+      ".oOSSSSOo.ww",
+      ".SSeSSeSS.ww",
+      "..SSSSSS.yyy",
+      ".bBBggggBbS.",
+      "bBBBggggBBb.",
+      "bBBBggggBBb.",
+      ".bBBggggBb..",
+      "...gg..gg...",
+      "...nn..nn..."
+    ]
+  }
+}

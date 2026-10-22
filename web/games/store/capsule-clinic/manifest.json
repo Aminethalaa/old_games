@@ -1,0 +1,75 @@
+{
+  "id": "capsule-clinic",
+  "name": "Capsule Clinic",
+  "short": "CAPSULES",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "puzzle",
+  "layout": "classic",
+  "size": [
+    128,
+    256
+  ],
+  "color": "#34f0b0",
+  "description": "Drop two-colour capsules into the bottle and line up four of a colour to wipe out the grinning germs. Clear them all to move on to a tougher bottle.",
+  "controls": {
+    "dpad": "Move / soft drop",
+    "a": "Rotate",
+    "b": "Rotate back"
+  },
+  "tags": [
+    "puzzle",
+    "match",
+    "germs",
+    "falling"
+  ],
+  "achievements": [
+    {
+      "id": "first-germ",
+      "name": "Germ Buster",
+      "desc": "Wipe out your first germ"
+    },
+    {
+      "id": "chain",
+      "name": "Chain Reaction",
+      "desc": "Trigger a 2-step cascade"
+    },
+    {
+      "id": "squeaky-clean",
+      "name": "Squeaky Clean",
+      "desc": "Clear every germ in a bottle"
+    },
+    {
+      "id": "level5",
+      "name": "Head Doctor",
+      "desc": "Reach level 5"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "R": "#ff4d6d",
+      "r": "#ffa0b0",
+      "Y": "#ffd23f",
+      "y": "#fff3a8",
+      "B": "#3fa9ff",
+      "b": "#a8d4ff",
+      "W": "#fff1e8",
+      "K": "#1b1033"
+    },
+    "rows": [
+      "..RRRRYYYY..",
+      ".RrRRRYYyYY.",
+      ".RRRRRYYYYY.",
+      ".RRRRRYYYYY.",
+      "..RRRRYYYY..",
+      "............",
+      "...B....B...",
+      "..BBBBBBBB..",
+      ".BBbBBBBBBB.",
+      ".BBWKBBWKBB.",
+      ".BBBBKKBBBB.",
+      "..BBBBBBBB.."
+    ]
+  }
+}

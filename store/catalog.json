@@ -46,6 +46,147 @@
    "achievements": 4
   },
   {
+   "id": "bomb-maze",
+   "name": "Bomb Maze",
+   "short": "BOMBMAZE",
+   "version": "1.0.0",
+   "category": "arcade",
+   "color": "#27d9c3",
+   "description": "Lay bombs, blast the crates and chain the explosions to trap wandering blobs, chasers and ghosts. Dig up power-ups, find the hidden exit and survive ten ever-trickier mazes.",
+   "author": "Retro Console",
+   "tags": [
+    "bombs",
+    "maze",
+    "arcade",
+    "action"
+   ],
+   "icon": {
+    "palette": {
+     "g": "#1d8f7d",
+     "G": "#27d9c3",
+     "K": "#c8d0ff",
+     "k": "#1d1d2e",
+     "w": "#ffffff",
+     "y": "#ffec27",
+     "o": "#ff7a2a"
+    },
+    "rows": [
+     "gggggggggoyg",
+     "ggggggggkggg",
+     "gggggggkgggg",
+     "ggggKKKKgggg",
+     "gggKkkkkKggg",
+     "ggKkwkkkkKgg",
+     "ggKkwkkkkKgg",
+     "ggKkkkkkkKgg",
+     "ggKkkkkkkKgg",
+     "gggKkkkkKggg",
+     "ggggKKKKgggg",
+     "GGGGGGGGGGGG"
+    ]
+   },
+   "size": 37286,
+   "sha256": "a88a3ab6d5555282f068d41aee46010f0a2e040e3537ec81fbb38887c11bf96a",
+   "url": "packs/bomb-maze-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "coast-run",
+   "name": "Coast Run",
+   "short": "COAST",
+   "version": "1.0.0",
+   "category": "arcade",
+   "color": "#ff6b3d",
+   "description": "A sunny time-attack drive along rolling coast roads. Race the clock, overtake traffic, grab checkpoints and pick your route at every fork on the way to the goal.",
+   "author": "Retro Console",
+   "tags": [
+    "driving",
+    "time attack",
+    "traffic",
+    "3d"
+   ],
+   "icon": {
+    "palette": {
+     "S": "#4cc3ff",
+     "Y": "#ffe45e",
+     "P": "#27c25a",
+     "B": "#8a5a2b",
+     "W": "#1fa3d8",
+     "T": "#f6dc8f",
+     "G": "#7b7f8a",
+     "R": "#ff3b30",
+     "D": "#2a3550",
+     "H": "#ffffff"
+    },
+    "rows": [
+     "SSSSSSSSSSSS",
+     "SSSSSSSSYYSS",
+     "SPPSSSSSYYSS",
+     "PPPPSSSSSSSS",
+     "SPBSSSSSSSSS",
+     "WWBWWWWWWWWW",
+     "TTBTTGGGGTTT",
+     "TTTTGGGGGGTT",
+     "TTTGGGRRGGGT",
+     "TTGGGRRRRGGG",
+     "TGGGDRHHRDGG",
+     "GGGGDRRRRDGG"
+    ]
+   },
+   "size": 55260,
+   "sha256": "1341b1f3e69367f5de9486d63671b5e2485b03c3881c849e9eae0a817faaeb1f",
+   "url": "packs/coast-run-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "hover-rally",
+   "name": "Hover Rally",
+   "short": "HOVER",
+   "version": "1.0.0",
+   "category": "arcade",
+   "color": "#2fffc4",
+   "description": "Eight hover-craft, three laps, three tracks. Ride sweeping curves, hills and banked turns, boost with your shield energy and recharge on the glowing strips. Finish in the top four to unlock the next track.",
+   "author": "Retro Console",
+   "tags": [
+    "racing",
+    "futuristic",
+    "3d",
+    "laps"
+   ],
+   "icon": {
+    "palette": {
+     "K": "#10062a",
+     "P": "#ff2fd0",
+     "M": "#2fffc4",
+     "G": "#4a4f6a",
+     "W": "#ffffff",
+     "Y": "#ffe45e",
+     "O": "#ff7a2f"
+    },
+    "rows": [
+     "KKKKKKKKKKKK",
+     "KKKKKKKKKKKK",
+     "KKKPPPPPPKKK",
+     "KKKKMGGMKKKK",
+     "KKKKMGGMKKKK",
+     "KKKMGGGGMKKK",
+     "KKKMGGGGMKKK",
+     "KKMGGYYGGMKK",
+     "KKMGYWWYGMKK",
+     "KMGYYYYYYGMK",
+     "KMGOYGGYOGMK",
+     "MGGGGGGGGGGM"
+    ]
+   },
+   "size": 50733,
+   "sha256": "6a6155ed6d4be1b504b8c68494cf33791686b275ff548dee400417aa8e5adb6d",
+   "url": "packs/hover-rally-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
    "id": "maze-muncher",
    "name": "Maze Muncher",
    "short": "MUNCHER",
@@ -84,6 +225,100 @@
    "size": 26060,
    "sha256": "023f732716f33d52d986f6a0bbd7ce7ad8b39cc0e72875a091dbbcbde6277753",
    "url": "packs/maze-muncher-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "nova-rider",
+   "name": "Nova Rider",
+   "short": "NOVA",
+   "version": "1.0.0",
+   "category": "arcade",
+   "color": "#9d6bff",
+   "description": "Fly over a chequered world in a pseudo-3D rail shooter. Dodge rock columns and trees, blast enemy waves and ground turrets, fly through bonus gates and defeat a giant boss at the end of each of three stages.",
+   "author": "Retro Console",
+   "tags": [
+    "shooter",
+    "rail shooter",
+    "3d",
+    "boss"
+   ],
+   "icon": {
+    "palette": {
+     "K": "#120a38",
+     "P": "#8f4bff",
+     "M": "#ff3fa4",
+     "C": "#3de2ff",
+     "W": "#ffffff",
+     "Y": "#ffe45e",
+     "G": "#2fd36a",
+     "D": "#2a1a6a",
+     "O": "#ff9e3d"
+    },
+    "rows": [
+     "KKKKKKKKKKKK",
+     "KKMKKKKKKCKK",
+     "KKKKKKKKKKKK",
+     "KKKKKYYKKKKK",
+     "KKKKYYYYKKKK",
+     "KKKKKYYKKKKK",
+     "KKKKKCCKKKKK",
+     "KKKKKWCKKKKK",
+     "KKKKPPWPPKKK",
+     "KGDGDPPDGDGK",
+     "DGDGDGDGDGDG",
+     "GDGDGDGDGDGD"
+    ]
+   },
+   "size": 54494,
+   "sha256": "c38c8f17303438c049fe76c154fb24ba0786552a844765283dc612c01dcd957c",
+   "url": "packs/nova-rider-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "pocket-pinball",
+   "name": "Pocket Pinball",
+   "short": "PINBALL",
+   "version": "1.0.0",
+   "category": "arcade",
+   "color": "#5b8cff",
+   "description": "A full space-themed pinball table in your pocket: pop bumpers, drop targets, a spinner, a ramp, lanes, a ball-holding saucer and multiball. Pull the plunger and keep the silver ball alive.",
+   "author": "Retro Console",
+   "tags": [
+    "pinball",
+    "physics",
+    "arcade",
+    "space"
+   ],
+   "icon": {
+    "palette": {
+     "N": "#1d2b53",
+     "B": "#5b8cff",
+     "P": "#ff4f8b",
+     "p": "#ff9fc0",
+     "W": "#fff1e8",
+     "S": "#c2c3c7",
+     "O": "#ffa300"
+    },
+    "rows": [
+     "............",
+     "..BBBBBBBB..",
+     ".BNpPPpNNNB.",
+     ".BpPPPPpNNB.",
+     ".BPPWWPPWSB.",
+     ".BPPWWPPSSB.",
+     ".BpPPPPpNNB.",
+     ".BNpPPpNNNB.",
+     ".BOONNNNOOB.",
+     ".BNNOOOONNB.",
+     "..BBBBBBBB..",
+     "............"
+    ]
+   },
+   "size": 44834,
+   "sha256": "e01b28346ce92128a1258c77bd76e923401cabaf1f69b01cb628f55c54402e49",
+   "url": "packs/pocket-pinball-1.0.0.zip",
    "sdk": 1,
    "achievements": 4
   },
@@ -180,6 +415,56 @@
    "achievements": 4
   },
   {
+   "id": "scaffold-rush",
+   "name": "Scaffold Rush",
+   "short": "SCAFFOLD",
+   "version": "1.0.0",
+   "category": "arcade",
+   "color": "#ff6a2b",
+   "description": "Climb an unfinished tower while a mischievous robot rolls tyres down the girders. Jump the hazards, grab the mallet, ride lifts and belts, then pop every rivet to bring the whole structure down.",
+   "author": "Retro Console",
+   "tags": [
+    "arcade",
+    "climbing",
+    "platformer",
+    "retro"
+   ],
+   "icon": {
+    "palette": {
+     "h": "#ffd23a",
+     "H": "#c98a00",
+     "s": "#ffccaa",
+     "e": "#1d2b53",
+     "v": "#ff7a2a",
+     "V": "#ffec27",
+     "b": "#29adff",
+     "k": "#2a2438",
+     "t": "#8a92b8",
+     "O": "#e8551f",
+     "o": "#ffd9b0"
+    },
+    "rows": [
+     "...hhhh.....",
+     "..hhhhhh....",
+     ".HHHHHHHH...",
+     "..ssssss....",
+     "..sesses....",
+     "..ssssss.kk.",
+     ".vvVVVVvkttk",
+     ".vvvvvvvkttk",
+     ".bbbbbbb.kk.",
+     "..bb..bb....",
+     "..kk..kk....",
+     "OoOOOoOOOoOO"
+    ]
+   },
+   "size": 46352,
+   "sha256": "c38ad423864397867644a98f2b5fc63b663b2d3f8939a6c00683f8ad47b0ce71",
+   "url": "packs/scaffold-rush-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
    "id": "star-fighter",
    "name": "Star Fighter",
    "short": "STARFIGHT",
@@ -221,6 +506,53 @@
    "size": 34228,
    "sha256": "2309977c98e468b5cae485faffa424dd39afbe7c2193cd91a95c2925db8cf95a",
    "url": "packs/star-fighter-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "capsule-clinic",
+   "name": "Capsule Clinic",
+   "short": "CAPSULES",
+   "version": "1.0.0",
+   "category": "puzzle",
+   "color": "#34f0b0",
+   "description": "Drop two-colour capsules into the bottle and line up four of a colour to wipe out the grinning germs. Clear them all to move on to a tougher bottle.",
+   "author": "Retro Console",
+   "tags": [
+    "puzzle",
+    "match",
+    "germs",
+    "falling"
+   ],
+   "icon": {
+    "palette": {
+     "R": "#ff4d6d",
+     "r": "#ffa0b0",
+     "Y": "#ffd23f",
+     "y": "#fff3a8",
+     "B": "#3fa9ff",
+     "b": "#a8d4ff",
+     "W": "#fff1e8",
+     "K": "#1b1033"
+    },
+    "rows": [
+     "..RRRRYYYY..",
+     ".RrRRRYYyYY.",
+     ".RRRRRYYYYY.",
+     ".RRRRRYYYYY.",
+     "..RRRRYYYY..",
+     "............",
+     "...B....B...",
+     "..BBBBBBBB..",
+     ".BBbBBBBBBB.",
+     ".BBWKBBWKBB.",
+     ".BBBBKKBBBB.",
+     "..BBBBBBBB.."
+    ]
+   },
+   "size": 25218,
+   "sha256": "2b6872e477f194a0864789900c285d6f60ce87714cc7fab18e3a35918638651f",
+   "url": "packs/capsule-clinic-1.0.0.zip",
    "sdk": 1,
    "achievements": 4
   },
@@ -316,6 +648,55 @@
    "size": 19787,
    "sha256": "0e37be4d16b256979038a1dbd8d4d69f298f1bffed05db4c76790b91e73fce0c",
    "url": "packs/four-in-row-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "gem-stack",
+   "name": "Gem Stack",
+   "short": "GEMS",
+   "version": "1.0.0",
+   "category": "puzzle",
+   "color": "#c46bff",
+   "description": "Triples of shaped gems tumble into a narrow well. Line up three or more of a kind in any direction, even diagonally, and set off glittering chain reactions.",
+   "author": "Retro Console",
+   "tags": [
+    "puzzle",
+    "gems",
+    "match-3",
+    "falling"
+   ],
+   "icon": {
+    "palette": {
+     "R": "#ff3b5c",
+     "r": "#ffa0b0",
+     "Y": "#ffd23f",
+     "y": "#fff3a8",
+     "G": "#2fe06b",
+     "g": "#a8ffc4",
+     "B": "#3d9bff",
+     "b": "#a8d4ff",
+     "P": "#b066ff",
+     "p": "#ddb8ff"
+    },
+    "rows": [
+     "..R.....YYY.",
+     ".RrR...YyYYY",
+     "RRrRR..YYYYY",
+     ".RRR...YYYYY",
+     "..R.....YYY.",
+     "............",
+     "GGGGG....B..",
+     "GgggG...BbB.",
+     "GgGGG...BBB.",
+     "GGGGG..BBBBB",
+     "GGGGG..BBBBB",
+     "............"
+    ]
+   },
+   "size": 21599,
+   "sha256": "70ab4d083e8945abdf3f7fae287d8273388152f33fe23f2d4efbd49b22be6758",
+   "url": "packs/gem-stack-1.0.0.zip",
    "sdk": 1,
    "achievements": 4
   },
@@ -693,6 +1074,55 @@
    "size": 27338,
    "sha256": "bce0053bd9dab81be28e2beeefaab3a4d9e70352e3de48845ddd2952e6afd095",
    "url": "packs/neon-runner-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
+   "id": "rune-dungeon",
+   "name": "Rune Dungeon",
+   "short": "RUNES",
+   "version": "1.0.0",
+   "category": "action",
+   "color": "#4a86ff",
+   "description": "A top-down dungeon adventure. Slash slimes, bats and shielded skeletons, find keys, push blocks onto floor plates, shoot crystal switches with your bow and beat two bosses across two dungeons.",
+   "author": "Retro Console",
+   "tags": [
+    "adventure",
+    "dungeon",
+    "action",
+    "puzzle"
+   ],
+   "icon": {
+    "palette": {
+     "o": "#8a3d12",
+     "O": "#ff9a2e",
+     "S": "#ffd0a8",
+     "e": "#1d2b53",
+     "b": "#1b4fb3",
+     "B": "#3d8bff",
+     "g": "#fff0c0",
+     "n": "#7a4a22",
+     "w": "#e8f0ff",
+     "y": "#ffd23a"
+    },
+    "rows": [
+     "...oooo...ww",
+     "..oOOOOo..ww",
+     ".oOOOOOOo.ww",
+     ".oOSSSSOo.ww",
+     ".SSeSSeSS.ww",
+     "..SSSSSS.yyy",
+     ".bBBggggBbS.",
+     "bBBBggggBBb.",
+     "bBBBggggBBb.",
+     ".bBBggggBb..",
+     "...gg..gg...",
+     "...nn..nn..."
+    ]
+   },
+   "size": 75162,
+   "sha256": "244637a13cd72cd0d4202196cc4903b29ad2f30bbba6d05a7c91ef246a70a7ae",
+   "url": "packs/rune-dungeon-1.0.0.zip",
    "sdk": 1,
    "achievements": 4
   },
