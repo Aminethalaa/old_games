@@ -190,7 +190,7 @@
     explode: function () { noise(0.45, { vol: 0.3, freq: 2600, sweep: 120 }); tone(90, 0.3, { vol: 0.15, type: 'sawtooth', slide: 35 }); },
     powerup: function () { [392, 523, 659, 784, 1047].forEach(function (f, i) { tone(f, 0.08, { vol: 0.11, delay: i * 0.05, type: 'triangle' }); }); },
     lose: function () { [392, 330, 262, 196].forEach(function (f, i) { tone(f, 0.2, { vol: 0.14, delay: i * 0.16, type: 'triangle' }); }); },
-    win: function () { [523, 523, 523, 659, 784, 1047].forEach(function (f, i) { tone(f, 0.14, { vol: 0.12, delay: i * 0.1 }); }); },
+    win: function () { [440, 554, 659, 880, 659, 880, 1109].forEach(function (f, i) { tone(f, 0.13, { vol: 0.12, delay: i * 0.09 }); }); },
     start: function () { [262, 330, 392, 523].forEach(function (f, i) { tone(f, 0.1, { vol: 0.12, delay: i * 0.07 }); }); },
     pause: function () { tone(330, 0.07, { vol: 0.1 }); tone(220, 0.09, { vol: 0.1, delay: 0.07 }); },
     trophy: function () { [784, 988, 1175, 1568].forEach(function (f, i) { tone(f, 0.12, { vol: 0.1, delay: i * 0.07, type: 'triangle' }); }); }
@@ -220,9 +220,9 @@
     chill: { bpm: 96, voices: [
       { wave: 'triangle', vol: 0.12, seq: 'G4 . . . B4 . . . D5 . . . B4 . . . A4 . . . C5 . . . E5 . . . C5 . . .' },
       { wave: 'sine', vol: 0.12, seq: 'G2 - - - - - - - D3 - - - - - - - A2 - - - - - - - E3 - - - - - - -' }] },
-    retro: { bpm: 168, voices: [
-      { wave: 'square', vol: 0.06, seq: 'E5 E5 . E5 . C5 E5 . G5 . . . G4 . . . C5 . . G4 . . E4 . . A4 . B4 . A#4 A4 . .' },
-      { wave: 'square', vol: 0.045, seq: 'C3 . G3 . C3 . G3 . G2 . D3 . G2 . D3 . A2 . E3 . A2 . E3 . F2 . C3 . F2 . C3 .' },
+    retro: { bpm: 156, voices: [
+      { wave: 'square', vol: 0.06, seq: 'A4 . C5 . E5 . D5 C5 . A4 . . G4 . A4 . C5 . E5 . G5 . E5 . D5 . C5 A4 . . .' },
+      { wave: 'square', vol: 0.045, seq: 'A2 . A2 . E3 . A2 . A2 . A2 . E3 . A2 . F2 . F2 . C3 . F2 . G2 . G2 . D3 . G2 .' },
       { noise: true, vol: 0.04, seq: 'x . x . x . x . x . x . x . x .' }] }
   };
   var NOTE_IDX = { C: 0, 'C#': 1, D: 2, 'D#': 3, E: 4, F: 5, 'F#': 6, G: 7, 'G#': 8, A: 9, 'A#': 10, B: 11 };
