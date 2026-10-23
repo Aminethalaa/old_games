@@ -1,0 +1,38 @@
+{
+  "id": "nova-rider",
+  "name": "Nova Rider",
+  "short": "NOVA",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "arcade",
+  "layout": "full",
+  "size": [136, 164],
+  "color": "#9d6bff",
+  "description": "Fly over a chequered world in a pseudo-3D rail shooter. Dodge rock columns and trees, blast enemy waves and ground turrets, fly through bonus gates and defeat a giant boss at the end of each of three stages.",
+  "controls": { "dpad": "Fly anywhere on screen", "a": "Rapid laser (auto-aim)", "b": "Bomb (limited)" },
+  "tags": ["shooter", "rail shooter", "3d", "boss"],
+  "achievements": [
+    { "id": "gate-runner", "name": "Gate Runner", "desc": "Fly through 3 bonus gates in a row" },
+    { "id": "bomb-blast", "name": "Bomb Blast", "desc": "Destroy 4 enemies with a single bomb" },
+    { "id": "boss-one", "name": "Hornet Down", "desc": "Defeat the first boss" },
+    { "id": "nova-champion", "name": "Nova Champion", "desc": "Defeat the final boss" }
+  ],
+  "icon": {
+    "palette": { "K": "#120a38", "P": "#8f4bff", "M": "#ff3fa4", "C": "#3de2ff", "W": "#ffffff", "Y": "#ffe45e", "G": "#2fd36a", "D": "#2a1a6a", "O": "#ff9e3d" },
+    "rows": [
+      "KKKKKKKKKKKK",
+      "KKMKKKKKKCKK",
+      "KKKKKKKKKKKK",
+      "KKKKKYYKKKKK",
+      "KKKKYYYYKKKK",
+      "KKKKKYYKKKKK",
+      "KKKKKCCKKKKK",
+      "KKKKKWCKKKKK",
+      "KKKKPPWPPKKK",
+      "KGDGDPPDGDGK",
+      "DGDGDGDGDGDG",
+      "GDGDGDGDGDGD"
+    ]
+  }
+}

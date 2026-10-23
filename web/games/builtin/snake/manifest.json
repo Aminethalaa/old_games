@@ -1,0 +1,72 @@
+{
+  "id": "snake",
+  "name": "Snake",
+  "short": "SNAKE",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "classic",
+  "layout": "classic",
+  "size": [
+    156,
+    312
+  ],
+  "color": "#00e436",
+  "description": "Guide a rainbow snake to apples and timed bonus fruit. It speeds up as it grows, walls bite, and later levels turn the edges into portals.",
+  "controls": {
+    "dpad": "Steer",
+    "a": "Hold for speed boost"
+  },
+  "tags": [
+    "snake",
+    "apples",
+    "reflex"
+  ],
+  "achievements": [
+    {
+      "id": "first-bite",
+      "name": "First Bite",
+      "desc": "Eat your first apple"
+    },
+    {
+      "id": "sweet-tooth",
+      "name": "Sweet Tooth",
+      "desc": "Eat 3 bonus fruits in one run"
+    },
+    {
+      "id": "long-snake",
+      "name": "Long Boa",
+      "desc": "Grow to length 25"
+    },
+    {
+      "id": "portal",
+      "name": "Wrap Around",
+      "desc": "Reach level 4, where the walls turn into portals"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "P": "#b455ff",
+      "C": "#3de2ff",
+      "G": "#00e436",
+      "Y": "#c8ff3a",
+      "R": "#ff004d",
+      "W": "#fff1e8",
+      "K": "#10131c"
+    },
+    "rows": [
+      "PPPPPPPPPP..",
+      "PPPPPPPPPP..",
+      "........CC..",
+      "........CC..",
+      "..CCCCCCCC..",
+      "..CCCCCCCC..",
+      "..CC........",
+      "..CC........",
+      "..GGGGGGWYRR",
+      "..GGGGGGKYRR",
+      "............",
+      "............"
+    ]
+  }
+}

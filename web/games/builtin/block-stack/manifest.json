@@ -1,0 +1,71 @@
+{
+  "id": "block-stack",
+  "name": "Block Stack",
+  "short": "BLOCKS",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "classic",
+  "layout": "classic",
+  "size": [
+    160,
+    320
+  ],
+  "color": "#3de2ff",
+  "description": "Stack the falling blocks, clear lines and race through the speed levels.",
+  "controls": {
+    "dpad": "Move / soft drop",
+    "a": "Rotate",
+    "b": "Hard drop"
+  },
+  "tags": [
+    "blocks",
+    "falling",
+    "puzzle"
+  ],
+  "achievements": [
+    {
+      "id": "first-line",
+      "name": "First Line",
+      "desc": "Clear your first line"
+    },
+    {
+      "id": "quad",
+      "name": "Quad Clear",
+      "desc": "Clear 4 lines with one piece"
+    },
+    {
+      "id": "level5",
+      "name": "Speed Demon",
+      "desc": "Reach level 5"
+    },
+    {
+      "id": "score5000",
+      "name": "Block Master",
+      "desc": "Score 5000 points"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "P": "#b455ff",
+      "C": "#3de2ff",
+      "R": "#ff004d",
+      "G": "#00e436",
+      "Y": "#ffec27"
+    },
+    "rows": [
+      "............",
+      "............",
+      "..PPPPPP....",
+      "..PPPPPP....",
+      "....PP......",
+      "....PP......",
+      "............",
+      "............",
+      "CCCC....GGYY",
+      "CCCC....GGYY",
+      "CCRRRRGGGGYY",
+      "CCRRRRGGGGYY"
+    ]
+  }
+}

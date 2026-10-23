@@ -1,0 +1,74 @@
+{
+  "id": "road-racer",
+  "name": "Road Racer",
+  "short": "RACER",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "classic",
+  "layout": "classic",
+  "size": [
+    160,
+    320
+  ],
+  "color": "#ff004d",
+  "description": "Weave through four lanes of traffic at ever-higher speed. Grab coins and fuel cans, pass close for bonus points and fire the nitro when the road opens up.",
+  "controls": {
+    "dpad": "Left/right: change lane. Up: boost. Down: brake",
+    "a": "Nitro burst"
+  },
+  "tags": [
+    "racing",
+    "cars",
+    "traffic",
+    "speed"
+  ],
+  "achievements": [
+    {
+      "id": "coins10",
+      "name": "Coin Collector",
+      "desc": "Collect 10 coins in one run"
+    },
+    {
+      "id": "close5",
+      "name": "Close Shave",
+      "desc": "Pass 5 cars at a hair's breadth in one run"
+    },
+    {
+      "id": "nitro3",
+      "name": "Nitro Junkie",
+      "desc": "Fire the nitro 3 times in one run"
+    },
+    {
+      "id": "level5",
+      "name": "Highway Hero",
+      "desc": "Reach level 5"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "G": "#00b84a",
+      "A": "#3a3f52",
+      "W": "#d7dbe8",
+      "R": "#ff004d",
+      "r": "#a8002f",
+      "K": "#10131c",
+      "C": "#3de2ff",
+      "c": "#1c9ec0"
+    },
+    "rows": [
+      "GGAAAAWAAAGG",
+      "GGAAAAWAAAGG",
+      "GGAAAAAAAAGG",
+      "GGAAAWRRRAGG",
+      "GGAAAWRKRAGG",
+      "GGAAAWRRRAGG",
+      "GGAAAWrrrAGG",
+      "GGAAAAWAAAGG",
+      "GGAAAAWAAAGG",
+      "GGAWCCCAAAGG",
+      "GGAWCKCAAAGG",
+      "GGAWCcCAAAGG"
+    ]
+  }
+}

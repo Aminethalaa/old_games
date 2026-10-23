@@ -1,0 +1,77 @@
+{
+  "id": "spin-runner",
+  "name": "Spin Runner",
+  "short": "SPINRUN",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "action",
+  "layout": "full",
+  "size": [
+    204,
+    246
+  ],
+  "color": "#18d8c0",
+  "description": "Roll as Orb, a tiny round robot, through three fast zones: windmill fields, a glowing mushroom cavern and a clockwork works. Build speed on slopes, charge-roll, loop the loop and smash the bugs.",
+  "controls": {
+    "dpad": "Left/right run, hold Down to roll or charge",
+    "a": "Jump (hold = higher)",
+    "b": "Roll (same as Down)"
+  },
+  "tags": [
+    "platformer",
+    "speed",
+    "momentum",
+    "robot"
+  ],
+  "achievements": [
+    {
+      "id": "loop-de-loop",
+      "name": "Loop-de-Loop",
+      "desc": "Complete a full loop"
+    },
+    {
+      "id": "gem-hoarder",
+      "name": "Gem Hoarder",
+      "desc": "Collect 100 gems in one run"
+    },
+    {
+      "id": "full-throttle",
+      "name": "Full Throttle",
+      "desc": "Reach top speed"
+    },
+    {
+      "id": "all-zones",
+      "name": "Zone Champion",
+      "desc": "Clear all three zones"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "O": "#1a1838",
+      "W": "#ffffff",
+      "S": "#d4daf4",
+      "D": "#8e98cc",
+      "T": "#18c8b0",
+      "K": "#14122a",
+      "A": "#ffb020",
+      "R": "#ff8a1e",
+      "G": "#a06aff",
+      "H": "#e0ccff"
+    },
+    "rows": [
+      "....RR......",
+      "....OO......",
+      "...OOOOOO...",
+      "..OWWSSSSO..",
+      "..OWKKKKKO..",
+      "..OSKAKAKO..",
+      "..OSSKKKSO..",
+      "..OTSSSDDO..",
+      "..OTTDDDDOHG",
+      "...OODDOO.GG",
+      "..TT.OO.TT..",
+      "............"
+    ]
+  }
+}

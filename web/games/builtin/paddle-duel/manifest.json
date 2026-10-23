@@ -1,0 +1,74 @@
+{
+  "id": "paddle-duel",
+  "name": "Paddle Duel",
+  "short": "DUEL",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "classic",
+  "layout": "classic",
+  "size": [
+    160,
+    320
+  ],
+  "color": "#b455ff",
+  "description": "Neon paddle duel against the CPU. Every return speeds the ball up, hit it off the edge of your paddle to steer it, and grab orbs to freeze your rival.",
+  "controls": {
+    "dpad": "Move paddle (left/right)",
+    "a": "Smash shot"
+  },
+  "tags": [
+    "pong",
+    "neon",
+    "versus",
+    "cpu"
+  ],
+  "achievements": [
+    {
+      "id": "first-point",
+      "name": "First Blood",
+      "desc": "Win your first point"
+    },
+    {
+      "id": "rally12",
+      "name": "Marathon Rally",
+      "desc": "Return the ball 12 times in one rally"
+    },
+    {
+      "id": "smash-point",
+      "name": "Smash Hit",
+      "desc": "Win a point with a smash shot"
+    },
+    {
+      "id": "level4",
+      "name": "Duel Master",
+      "desc": "Reach level 4"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "m": "#ff9af8",
+      "M": "#ff3df2",
+      "p": "#8a5ad6",
+      "P": "#b455ff",
+      "d": "#5b4a8a",
+      "W": "#fff1e8",
+      "c": "#a8f2ff",
+      "C": "#3de2ff"
+    },
+    "rows": [
+      "............",
+      "...mmmmmm...",
+      "...MMMMMM...",
+      "............",
+      "....pp......",
+      ".d.d.PP.d.d.",
+      "......WW....",
+      "......WW....",
+      "............",
+      "............",
+      "..cccccccc..",
+      "..CCCCCCCC.."
+    ]
+  }
+}

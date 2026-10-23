@@ -1,0 +1,73 @@
+{
+  "id": "star-fighter",
+  "name": "Star Fighter",
+  "short": "STARFIGHT",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "arcade",
+  "layout": "classic",
+  "size": [
+    160,
+    320
+  ],
+  "color": "#ffa300",
+  "description": "Swarms swoop in on curved paths and dive-bomb your fighter. Beware the tractor beam, rescue a captured ship for dual fire and survive the challenge stages.",
+  "controls": {
+    "dpad": "Move ship",
+    "a": "Fire (hold)",
+    "b": "Smart bomb"
+  },
+  "tags": [
+    "shooter",
+    "space",
+    "arcade"
+  ],
+  "achievements": [
+    {
+      "id": "wave1",
+      "name": "Squadron Down",
+      "desc": "Clear the first wave"
+    },
+    {
+      "id": "dual",
+      "name": "Twin Fire",
+      "desc": "Fly a dual fighter"
+    },
+    {
+      "id": "challenge",
+      "name": "Challenger",
+      "desc": "Finish a challenge stage"
+    },
+    {
+      "id": "boss5",
+      "name": "Boss Hunter",
+      "desc": "Destroy 5 bosses in one game"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "G": "#00e436",
+      "P": "#b455ff",
+      "Y": "#ffec27",
+      "R": "#ff004d",
+      "W": "#fff1e8",
+      "C": "#3de2ff",
+      "B": "#29adff"
+    },
+    "rows": [
+      "P..G....G..P",
+      "PGGGGGGGGGGP",
+      ".GGWGGGGWGG.",
+      "..GGGBBGGG..",
+      "...GGGGGG...",
+      "....CCCC....",
+      ".....CC.....",
+      ".....Y......",
+      "......W.....",
+      ".....WCW....",
+      ".R..WWCWW.R.",
+      "RRWWWWWWWWRR"
+    ]
+  }
+}

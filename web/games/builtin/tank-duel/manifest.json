@@ -1,0 +1,71 @@
+{
+  "id": "tank-duel",
+  "name": "Tank Duel",
+  "short": "TANKS",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "classic",
+  "layout": "classic",
+  "size": [
+    156,
+    312
+  ],
+  "color": "#ffa300",
+  "description": "Defend your headquarters star from waves of enemy tanks. Blast brick walls, grab power-ups and survive as the armour gets heavier.",
+  "controls": {
+    "dpad": "Drive and turn",
+    "a": "Fire (hold to keep shooting)"
+  },
+  "tags": [
+    "tanks",
+    "arena",
+    "shooter",
+    "defense"
+  ],
+  "achievements": [
+    {
+      "id": "first-blood",
+      "name": "First Blood",
+      "desc": "Destroy your first enemy tank"
+    },
+    {
+      "id": "heavy-metal",
+      "name": "Heavy Metal",
+      "desc": "Destroy an armoured tank"
+    },
+    {
+      "id": "full-power",
+      "name": "Full Power",
+      "desc": "Upgrade your tank to 3 stars"
+    },
+    {
+      "id": "wave3",
+      "name": "Hold the Line",
+      "desc": "Reach wave 3"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "W": "#fff6d0",
+      "Y": "#ffe97a",
+      "O": "#e8a010",
+      "K": "#4a3a1a",
+      "k": "#8a6a2a"
+    },
+    "rows": [
+      ".....WW.....",
+      ".....WW.....",
+      "KKKYOWWOOKKK",
+      "kkkYOYYOOkkk",
+      "KKKYYYYOOKKK",
+      "kkkYYYYOOkkk",
+      "KKKYYYYOOKKK",
+      "kkkYYYYOOkkk",
+      "KKKYOYYOOKKK",
+      "kkkYOOOOOkkk",
+      "KKKYOOOOOKKK",
+      "kkkYOOOOOkkk"
+    ]
+  }
+}

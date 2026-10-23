@@ -1,0 +1,78 @@
+{
+  "id": "slide-puzzle",
+  "name": "Slide Puzzle",
+  "short": "SLIDE",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "puzzle",
+  "layout": "full",
+  "size": [
+    272,
+    328
+  ],
+  "color": "#29adff",
+  "description": "Slide the colourful numbered tiles back into order. Starts with 3x3, then 4x4 and 5x5, and every shuffle is guaranteed solvable.",
+  "controls": {
+    "dpad": "Slide tile that way",
+    "a": "New shuffle",
+    "b": "Undo move"
+  },
+  "tags": [
+    "puzzle",
+    "sliding",
+    "numbers",
+    "classic"
+  ],
+  "achievements": [
+    {
+      "id": "solve-3",
+      "name": "Warm Up",
+      "desc": "Solve a 3x3 puzzle"
+    },
+    {
+      "id": "solve-4",
+      "name": "Getting Serious",
+      "desc": "Solve a 4x4 puzzle"
+    },
+    {
+      "id": "solve-5",
+      "name": "Grand Slider",
+      "desc": "Solve a 5x5 puzzle"
+    },
+    {
+      "id": "quick",
+      "name": "Lightning Fingers",
+      "desc": "Solve a 3x3 in under 20 seconds"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "n": "#10163a",
+      "m": "#2a3558",
+      "W": "#fff1e8",
+      "A": "#29adff",
+      "B": "#6a7cff",
+      "C": "#b455ff",
+      "D": "#3de2ff",
+      "E": "#7a8cff",
+      "F": "#ff77a8",
+      "G": "#00e436",
+      "H": "#ffec27"
+    },
+    "rows": [
+      "nnnnnnnnnnnn",
+      "nWAAnWBBnWCC",
+      "nAAAnBBBnCCC",
+      "nAAAnBBBnCCC",
+      "nnnnnnnnnnnn",
+      "nWDDnWEEnWFF",
+      "nDDDnEEEnFFF",
+      "nDDDnEEEnFFF",
+      "nnnnnnnnnnnn",
+      "nWGGnWHHnmmm",
+      "nGGGnHHHnmnm",
+      "nGGGnHHHnmmm"
+    ]
+  }
+}

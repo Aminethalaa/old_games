@@ -1,0 +1,38 @@
+{
+  "id": "hover-rally",
+  "name": "Hover Rally",
+  "short": "HOVER",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "arcade",
+  "layout": "full",
+  "size": [136, 164],
+  "color": "#2fffc4",
+  "description": "Eight hover-craft, three laps, three tracks. Ride sweeping curves, hills and banked turns, boost with your shield energy and recharge on the glowing strips. Finish in the top four to unlock the next track.",
+  "controls": { "dpad": "Left / right steer", "a": "Boost (drains energy)", "b": "Airbrake for tight turns" },
+  "tags": ["racing", "futuristic", "3d", "laps"],
+  "achievements": [
+    { "id": "podium", "name": "Podium Finish", "desc": "Finish a race in the top three" },
+    { "id": "winner", "name": "Race Winner", "desc": "Win a race" },
+    { "id": "fuel-up", "name": "Fuel Up", "desc": "Recharge 150 energy from strips in one run" },
+    { "id": "grand-tour", "name": "Grand Tour", "desc": "Finish all three tracks" }
+  ],
+  "icon": {
+    "palette": { "K": "#10062a", "P": "#ff2fd0", "M": "#2fffc4", "G": "#4a4f6a", "W": "#ffffff", "Y": "#ffe45e", "O": "#ff7a2f" },
+    "rows": [
+      "KKKKKKKKKKKK",
+      "KKKKKKKKKKKK",
+      "KKKPPPPPPKKK",
+      "KKKKMGGMKKKK",
+      "KKKKMGGMKKKK",
+      "KKKMGGGGMKKK",
+      "KKKMGGGGMKKK",
+      "KKMGGYYGGMKK",
+      "KKMGYWWYGMKK",
+      "KMGYYYYYYGMK",
+      "KMGOYGGYOGMK",
+      "MGGGGGGGGGGM"
+    ]
+  }
+}

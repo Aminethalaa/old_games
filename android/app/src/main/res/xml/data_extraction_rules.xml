@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 12+: same data for cloud backup and device-to-device transfer. -->
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="sharedpref" path="progress.xml" />
+        <include domain="sharedpref" path="settings.xml" />
+        <include domain="file" path="saves/" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="sharedpref" path="progress.xml" />
+        <include domain="sharedpref" path="settings.xml" />
+        <include domain="file" path="saves/" />
+    </device-transfer>
+</data-extraction-rules>

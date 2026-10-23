@@ -1,0 +1,38 @@
+{
+  "id": "merge-2048",
+  "name": "Merge 2048",
+  "short": "MERGE",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "puzzle",
+  "layout": "full",
+  "size": [272, 328],
+  "color": "#ffa300",
+  "description": "Slide the colourful tiles, merge matching numbers and chase the 2048 tile. Undo charges refill every time you reach a new tile.",
+  "controls": { "dpad": "Slide all tiles", "b": "Undo (limited)" },
+  "tags": ["puzzle", "numbers", "merge", "2048"],
+  "achievements": [
+    { "id": "tile-256", "name": "Quarter K", "desc": "Create a 256 tile" },
+    { "id": "tile-512", "name": "Half Way", "desc": "Create a 512 tile" },
+    { "id": "tile-1024", "name": "Kilo Tile", "desc": "Create a 1024 tile" },
+    { "id": "tile-2048", "name": "The Big One", "desc": "Create the 2048 tile" }
+  ],
+  "icon": {
+    "palette": { "A": "#5ee7ff", "a": "#2a9bc4", "B": "#ffd23a", "b": "#c4921a", "C": "#ff6f4a", "c": "#b83a22", "D": "#a066ff", "d": "#6a3cc4", "W": "#fff1e8" },
+    "rows": [
+      "WAAAA..WBBBB",
+      "AAAAA..BBBBB",
+      "AAAAA..BBBBB",
+      "AAAAA..BBBBB",
+      "aaaaa..bbbbb",
+      "............",
+      "............",
+      "WCCCC..WDDDD",
+      "CCCCC..DDDDD",
+      "CCCCC..DDDDD",
+      "CCCCC..DDDDD",
+      "ccccc..ddddd"
+    ]
+  }
+}

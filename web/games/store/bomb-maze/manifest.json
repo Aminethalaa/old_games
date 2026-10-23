@@ -1,0 +1,74 @@
+{
+  "id": "bomb-maze",
+  "name": "Bomb Maze",
+  "short": "BOMBMAZE",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "arcade",
+  "layout": "full",
+  "size": [
+    136,
+    164
+  ],
+  "color": "#27d9c3",
+  "description": "Lay bombs, blast the crates and chain the explosions to trap wandering blobs, chasers and ghosts. Dig up power-ups, find the hidden exit and survive ten ever-trickier mazes.",
+  "controls": {
+    "dpad": "Move",
+    "a": "Place bomb",
+    "b": "Detonate remote bombs"
+  },
+  "tags": [
+    "bombs",
+    "maze",
+    "arcade",
+    "action"
+  ],
+  "achievements": [
+    {
+      "id": "first-blast",
+      "name": "First Blast",
+      "desc": "Defeat a critter with a bomb"
+    },
+    {
+      "id": "chain",
+      "name": "Chain Reaction",
+      "desc": "Set off three bombs in a single chain"
+    },
+    {
+      "id": "loaded",
+      "name": "Fully Loaded",
+      "desc": "Find all five kinds of power-up in one run"
+    },
+    {
+      "id": "maze-master",
+      "name": "Maze Master",
+      "desc": "Clear all ten mazes"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "g": "#1d8f7d",
+      "G": "#27d9c3",
+      "K": "#c8d0ff",
+      "k": "#1d1d2e",
+      "w": "#ffffff",
+      "y": "#ffec27",
+      "o": "#ff7a2a"
+    },
+    "rows": [
+      "gggggggggoyg",
+      "ggggggggkggg",
+      "gggggggkgggg",
+      "ggggKKKKgggg",
+      "gggKkkkkKggg",
+      "ggKkwkkkkKgg",
+      "ggKkwkkkkKgg",
+      "ggKkkkkkkKgg",
+      "ggKkkkkkkKgg",
+      "gggKkkkkKggg",
+      "ggggKKKKgggg",
+      "GGGGGGGGGGGG"
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "sand-palace",
+  "name": "Sand Palace",
+  "short": "SANDPALACE",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "action",
+  "layout": "full",
+  "size": [
+    136,
+    164
+  ],
+  "color": "#f0c15a",
+  "description": "A cinematic palace escape. Run, leap and climb through trap-filled halls, duel the guards with a curved blade and reach every exit before the sand runs out.",
+  "controls": {
+    "dpad": "Walk / crouch / hang at edges",
+    "a": "Jump / sword strike",
+    "b": "Hold to run / parry"
+  },
+  "tags": [
+    "platformer",
+    "sword",
+    "escape"
+  ],
+  "achievements": [
+    {
+      "id": "first-escape",
+      "name": "First Escape",
+      "desc": "Break out of the cells (clear level 1)"
+    },
+    {
+      "id": "duelist",
+      "name": "Duelist",
+      "desc": "Defeat 5 palace guards"
+    },
+    {
+      "id": "riposte",
+      "name": "Iron Wrist",
+      "desc": "Parry 5 sword strikes"
+    },
+    {
+      "id": "free-at-last",
+      "name": "Free at Last",
+      "desc": "Escape from the palace"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "Y": "#ffcf3a",
+      "S": "#e0a860",
+      "D": "#a8743a",
+      "N": "#1d2b53",
+      "R": "#ff3d5e",
+      "P": "#f6c096",
+      "W": "#fff1e8",
+      "B": "#4a5fd0",
+      "C": "#bfeaff"
+    },
+    "rows": [
+      "............",
+      ".....YY.....",
+      "....YYYY....",
+      "...YSSSSY...",
+      "..YSSSSSSY..",
+      "..SSNNNNSS..",
+      "..SNRPPNNS..",
+      "..SRRWWNCS..",
+      "..SNNWWCNS..",
+      "..SNNBBNNS..",
+      "SSSSSSSSSSSS",
+      "DDDDDDDDDDDD"
+    ]
+  }
+}

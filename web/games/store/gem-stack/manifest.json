@@ -1,0 +1,77 @@
+{
+  "id": "gem-stack",
+  "name": "Gem Stack",
+  "short": "GEMS",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "puzzle",
+  "layout": "classic",
+  "size": [
+    144,
+    312
+  ],
+  "color": "#c46bff",
+  "description": "Triples of shaped gems tumble into a narrow well. Line up three or more of a kind in any direction, even diagonally, and set off glittering chain reactions.",
+  "controls": {
+    "dpad": "Move / soft drop",
+    "a": "Shuffle gems down",
+    "b": "Shuffle gems up"
+  },
+  "tags": [
+    "puzzle",
+    "gems",
+    "match-3",
+    "falling"
+  ],
+  "achievements": [
+    {
+      "id": "diagonal",
+      "name": "Cut Corners",
+      "desc": "Clear a diagonal line of gems"
+    },
+    {
+      "id": "combo3",
+      "name": "Chain Master",
+      "desc": "Trigger a 3-step chain reaction"
+    },
+    {
+      "id": "magic",
+      "name": "Magic Touch",
+      "desc": "Use a magic gem"
+    },
+    {
+      "id": "level5",
+      "name": "Gem Cutter",
+      "desc": "Reach level 5"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "R": "#ff3b5c",
+      "r": "#ffa0b0",
+      "Y": "#ffd23f",
+      "y": "#fff3a8",
+      "G": "#2fe06b",
+      "g": "#a8ffc4",
+      "B": "#3d9bff",
+      "b": "#a8d4ff",
+      "P": "#b066ff",
+      "p": "#ddb8ff"
+    },
+    "rows": [
+      "..R.....YYY.",
+      ".RrR...YyYYY",
+      "RRrRR..YYYYY",
+      ".RRR...YYYYY",
+      "..R.....YYY.",
+      "............",
+      "GGGGG....B..",
+      "GgggG...BbB.",
+      "GgGGG...BBB.",
+      "GGGGG..BBBBB",
+      "GGGGG..BBBBB",
+      "............"
+    ]
+  }
+}

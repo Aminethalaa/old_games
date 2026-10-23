@@ -1,0 +1,73 @@
+{
+  "id": "ring-champs",
+  "name": "Ring Champs",
+  "short": "RING",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "action",
+  "layout": "full",
+  "size": [
+    136,
+    164
+  ],
+  "color": "#ff4fa0",
+  "description": "Climb the boxing ladder against a cast of cartoon fighters. Read each tell, dodge, counter to earn stars, then unleash the super uppercut.",
+  "controls": {
+    "dpad": "Left/Right dodge, Down block, Up super",
+    "a": "Left jab",
+    "b": "Right jab"
+  },
+  "tags": [
+    "boxing",
+    "fighting",
+    "reflex",
+    "ladder"
+  ],
+  "achievements": [
+    {
+      "id": "counter-puncher",
+      "name": "Counter Puncher",
+      "desc": "Land a counter during an opponent's tell"
+    },
+    {
+      "id": "slippery",
+      "name": "Slippery",
+      "desc": "Perfectly dodge 10 punches"
+    },
+    {
+      "id": "lights-out",
+      "name": "Lights Out",
+      "desc": "Knock an opponent down with a super uppercut"
+    },
+    {
+      "id": "ring-champion",
+      "name": "Ring Champion",
+      "desc": "Beat the whole ladder"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "R": "#ff2f4a",
+      "r": "#a01028",
+      "W": "#ffffff",
+      "Y": "#ffec27",
+      "P": "#ff9aae",
+      "K": "#1d2b53"
+    },
+    "rows": [
+      "............",
+      ".YY......YY.",
+      ".YY.RRRR.YY.",
+      "...RRRRRR...",
+      "..RPPRRRRR..",
+      "..RPRRRRRRR.",
+      ".RRRRRRRRRR.",
+      ".RRRRRRRRRr.",
+      "..rRRRRRRr..",
+      "...rrrrrr...",
+      "...WWWWWW...",
+      "...WWWWWW..."
+    ]
+  }
+}

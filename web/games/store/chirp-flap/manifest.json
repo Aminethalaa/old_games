@@ -1,0 +1,38 @@
+{
+  "id": "chirp-flap",
+  "name": "Chirp Flap",
+  "short": "CHIRP",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "action",
+  "layout": "full",
+  "size": [136, 164],
+  "color": "#ffd23f",
+  "description": "Flap your little chick through the colourful towers. The gaps shrink, the speed climbs, and coins hide in the gaps.",
+  "controls": { "dpad": "Up flap", "a": "Flap", "b": "Flap" },
+  "tags": ["flappy", "endless", "bird"],
+  "achievements": [
+    { "id": "bronze-medal", "name": "Bronze Chick", "desc": "Score 10 points" },
+    { "id": "silver-medal", "name": "Silver Chick", "desc": "Score 25 points" },
+    { "id": "gold-medal", "name": "Golden Chick", "desc": "Score 50 points" },
+    { "id": "coin-hoarder", "name": "Coin Hoarder", "desc": "Collect 8 coins in one run" }
+  ],
+  "icon": {
+    "palette": { "Y": "#ffd23f", "O": "#ff6a00", "W": "#ffffff", "K": "#1d2b53", "y": "#ff9f1c", "P": "#ff5d8f", "B": "#fff4b0", "D": "#5a2a0a" },
+    "rows": [
+      "PP........PP",
+      "PP........PP",
+      "PP..DDDD..PP",
+      "PP.DYYYYD.PP",
+      "PP.DYYWKDOOP",
+      "PP.DyYYYYOOP",
+      "PP.DyyYYYD.P",
+      "PP.DYYBBYD.P",
+      "PP..DYYYD..P",
+      "PP...DDD...P",
+      "PP........PP",
+      "PP........PP"
+    ]
+  }
+}

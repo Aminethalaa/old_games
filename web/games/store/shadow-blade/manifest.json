@@ -1,0 +1,78 @@
+{
+  "id": "shadow-blade",
+  "name": "Shadow Blade",
+  "short": "SHADOW",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "action",
+  "layout": "full",
+  "size": [
+    136,
+    164
+  ],
+  "color": "#2ee6d6",
+  "description": "A fast ninja action-platformer. Run across moonlit rooftops, bamboo groves and an iron fortress, slash guards, parry arrows, throw shuriken and beat three bosses with learnable patterns.",
+  "controls": {
+    "dpad": "Run / UP = jump (x2)",
+    "a": "Sword slash",
+    "b": "Throw shuriken"
+  },
+  "tags": [
+    "ninja",
+    "platformer",
+    "action",
+    "boss"
+  ],
+  "achievements": [
+    {
+      "id": "roof-cleared",
+      "name": "Roof Cleared",
+      "desc": "Defeat the Shadow Stalker"
+    },
+    {
+      "id": "arrow-catcher",
+      "name": "Arrow Catcher",
+      "desc": "Parry 5 arrows with your blade"
+    },
+    {
+      "id": "star-thrower",
+      "name": "Star Thrower",
+      "desc": "Defeat 10 enemies with shuriken"
+    },
+    {
+      "id": "shadow-master",
+      "name": "Shadow Master",
+      "desc": "Clear all three stages"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "N": "#241a5c",
+      "O": "#fff2c0",
+      "K": "#0d0b21",
+      "B": "#3f4ad0",
+      "H": "#8a96ff",
+      "S": "#ffd9b8",
+      "E": "#14123a",
+      "C": "#2ee6d6",
+      "D": "#14a89c",
+      "M": "#e6eeff",
+      "Y": "#ffcf3a"
+    },
+    "rows": [
+      "NNNNNNNNNOOO",
+      "NNNNKKKKNOOO",
+      "NNNKBBBBKNOO",
+      "NNKBBHHBBKNN",
+      "NNKBBBBBBKNN",
+      "NNKSESSESKNM",
+      "NCKBBBBBBKNM",
+      "CDKKYYYYKKNM",
+      "NDKBBBBBBKYM",
+      "NNKBBKKBBKNM",
+      "NNNKBKKBKNNN",
+      "NNKKKNNKKKNN"
+    ]
+  }
+}

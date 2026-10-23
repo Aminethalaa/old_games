@@ -1,0 +1,74 @@
+{
+  "id": "pocket-pinball",
+  "name": "Pocket Pinball",
+  "short": "PINBALL",
+  "version": "1.0.0",
+  "sdk": 1,
+  "author": "Retro Console",
+  "category": "arcade",
+  "layout": "classic",
+  "size": [
+    160,
+    320
+  ],
+  "color": "#5b8cff",
+  "description": "A full space-themed pinball table in your pocket: pop bumpers, drop targets, a spinner, a ramp, lanes, a ball-holding saucer and multiball. Pull the plunger and keep the silver ball alive.",
+  "controls": {
+    "dpad": "Flippers / hold Down = plunger",
+    "a": "Left flipper",
+    "b": "Right flipper"
+  },
+  "tags": [
+    "pinball",
+    "physics",
+    "arcade",
+    "space"
+  ],
+  "achievements": [
+    {
+      "id": "multiball",
+      "name": "Triple Trouble",
+      "desc": "Start multiball"
+    },
+    {
+      "id": "lanes",
+      "name": "Lane Master",
+      "desc": "Light all three A-B-C lanes"
+    },
+    {
+      "id": "extra-ball",
+      "name": "Bonus Ball",
+      "desc": "Earn an extra ball"
+    },
+    {
+      "id": "score50k",
+      "name": "Star Pilot",
+      "desc": "Score 50000 points"
+    }
+  ],
+  "icon": {
+    "palette": {
+      "N": "#1d2b53",
+      "B": "#5b8cff",
+      "P": "#ff4f8b",
+      "p": "#ff9fc0",
+      "W": "#fff1e8",
+      "S": "#c2c3c7",
+      "O": "#ffa300"
+    },
+    "rows": [
+      "............",
+      "..BBBBBBBB..",
+      ".BNpPPpNNNB.",
+      ".BpPPPPpNNB.",
+      ".BPPWWPPWSB.",
+      ".BPPWWPPSSB.",
+      ".BpPPPPpNNB.",
+      ".BNpPPpNNNB.",
+      ".BOONNNNOOB.",
+      ".BNNOOOONNB.",
+      "..BBBBBBBB..",
+      "............"
+    ]
+  }
+}
