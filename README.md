@@ -48,28 +48,36 @@ bolts, a **ROTATE** button — but with a **full‑color LCD**, 20+ games, chipt
 | **Snake** — Guide a rainbow snake to apples and timed bonus fruit. It speeds up as it grows, walls bite, and later levels turn the edges into portals. | D-pad: Steer; A: Hold for speed boost | built in |
 | **Tank Duel** — Defend your headquarters star from waves of enemy tanks. Blast brick walls, grab power-ups and survive as the armour gets heavier. | D-pad: Drive and turn; A: Fire (hold to keep shooting) | built in |
 
-**Arcade pack** (5)
+**Arcade pack** (11)
 
 | Game | How to play | Where |
 |---|---|---|
 | **Alien Blaster** — Hold the line against marching pixel aliens. Hide behind crumbling shields, snipe the bonus UFO and survive ever faster waves. | D-pad: Move cannon; A: Fire (hold) | Game Store |
+| **Bomb Maze** — Lay bombs, blast the crates and chain the explosions to trap wandering blobs, chasers and ghosts. Dig up power-ups, find the hidden exit and survive ten ever-trickier mazes. | D-pad: Move; A: Place bomb; B: Detonate remote bombs | Game Store |
+| **Coast Run** — A sunny time-attack drive along rolling coast roads. Race the clock, overtake traffic, grab checkpoints and pick your route at every fork on the way to the goal. | D-pad: Left / right steer; A: Gas; B: Brake | Game Store |
+| **Hover Rally** — Eight hover-craft, three laps, three tracks. Ride sweeping curves, hills and banked turns, boost with your shield energy and recharge on the glowing strips. Finish in the top four to unlock the next track. | D-pad: Left / right steer; A: Boost (drains energy); B: Airbrake for tight turns | Game Store |
 | **Maze Muncher** — Gobble every dot in the neon maze while four ghosts with four different brains hunt you. Grab a power pellet and turn the tables! | D-pad: Steer (turns are queued) | Game Store |
+| **Nova Rider** — Fly over a chequered world in a pseudo-3D rail shooter. Dodge rock columns and trees, blast enemy waves and ground turrets, fly through bonus gates and defeat a giant boss at the end of each of three stages. | D-pad: Fly anywhere on screen; A: Rapid laser (auto-aim); B: Bomb (limited) | Game Store |
+| **Pocket Pinball** — A full space-themed pinball table in your pocket: pop bumpers, drop targets, a spinner, a ramp, lanes, a ball-holding saucer and multiball. Pull the plunger and keep the silver ball alive. | D-pad: Flippers / hold Down = plunger; A: Left flipper; B: Right flipper | Game Store |
 | **Road Hopper** — Hop across a busy road and a wild river to reach the five home bays. Dodge cars, ride the logs and watch out for sinking turtles! | D-pad: Hop (one jump per press) | Game Store |
 | **Rock Blaster** — Drift, spin and blast your way through a neon asteroid field. Rocks split, saucers shoot back and the hyperspace jump is your last resort. | D-pad: Left/Right turn, Up thrust; A: Fire (hold); B: Hyperspace jump | Game Store |
+| **Scaffold Rush** — Climb an unfinished tower while a mischievous robot rolls tyres down the girders. Jump the hazards, grab the mallet, ride lifts and belts, then pop every rivet to bring the whole structure down. | D-pad: Walk / climb ladders; A: Jump; B: Jump | Game Store |
 | **Star Fighter** — Swarms swoop in on curved paths and dive-bomb your fighter. Beware the tractor beam, rescue a captured ship for dual fire and survive the challenge stages. | D-pad: Move ship; A: Fire (hold); B: Smart bomb | Game Store |
 
-**Puzzle pack** (6)
+**Puzzle pack** (8)
 
 | Game | How to play | Where |
 |---|---|---|
+| **Capsule Clinic** — Drop two-colour capsules into the bottle and line up four of a colour to wipe out the grinning germs. Clear them all to move on to a tougher bottle. | D-pad: Move / soft drop; A: Rotate; B: Rotate back | Game Store |
 | **Crate Pusher** — Push every crate onto a glowing target. Plan ahead: crates can only be pushed, never pulled. 14 hand-made warehouse levels, from easy to brain-melting. | D-pad: Walk & push; A: Restart (hold: level select); B: Undo move | Game Store |
 | **Four in a Row** — Drop discs and connect four before the CPU does. The computer gets smarter with every level you beat. | D-pad: Choose column; A: Drop disc | Game Store |
+| **Gem Stack** — Triples of shaped gems tumble into a narrow well. Line up three or more of a kind in any direction, even diagonally, and set off glittering chain reactions. | D-pad: Move / soft drop; A: Shuffle gems down; B: Shuffle gems up | Game Store |
 | **Memory Match** — Flip the cards and find every pair before the clock runs out. Chain matches for a combo multiplier and clear bigger boards on each level. | D-pad: Move cursor; A: Flip card | Game Store |
 | **Merge 2048** — Slide the colourful tiles, merge matching numbers and chase the 2048 tile. Undo charges refill every time you reach a new tile. | D-pad: Slide all tiles; B: Undo (limited) | Game Store |
 | **Mine Finder** — Sweep the minefield with the D-pad cursor. Numbers count the neighbouring mines, flags mark the danger. Every cleared board adds more mines. | D-pad: Move cursor; A: Reveal / chord on a number; B: Flag / unflag | Game Store |
 | **Slide Puzzle** — Slide the colourful numbered tiles back into order. Starts with 3x3, then 4x4 and 5x5, and every shuffle is guaranteed solvable. | D-pad: Slide tile that way; A: New shuffle; B: Undo move | Game Store |
 
-**Action / Platform pack** (5)
+**Action / Platform pack** (11)
 
 | Game | How to play | Where |
 |---|---|---|
@@ -77,7 +85,13 @@ bolts, a **ROTATE** button — but with a **full‑color LCD**, 20+ games, chipt
 | **Dino Dash** — Run through the desert, leap over cacti and boulders, duck under birds. Day turns to night as you speed up. | D-pad: Up jump, Down duck; A: Jump (hold = higher); B: Duck / fast-fall | Game Store |
 | **Jump Hero** — A bite-sized platformer: run, jump and throw fireballs through grassland, crystal cave and fire castle. Beat them all and the world loops, harder. | D-pad: Move; A: Jump (hold = higher); B: Run / throw fireball | Game Store |
 | **Neon Runner** — Race down a synthwave highway in three lanes. Jump the barriers, slide under the beams, grab neon coins, magnets and shields. | D-pad: Left / right change lane; A: Jump; B: Slide (or dive) | Game Store |
+| **Ring Champs** — Climb the boxing ladder against a cast of cartoon fighters. Read each tell, dodge, counter to earn stars, then unleash the super uppercut. | D-pad: Left/Right dodge, Down block, Up super; A: Left jab; B: Right jab | Game Store |
+| **Rune Dungeon** — A top-down dungeon adventure. Slash slimes, bats and shielded skeletons, find keys, push blocks onto floor plates, shoot crystal switches with your bow and beat two bosses across two dungeons. | D-pad: Walk / push blocks; A: Sword slash; B: Shoot arrow | Game Store |
+| **Sand Palace** — A cinematic palace escape. Run, leap and climb through trap-filled halls, duel the guards with a curved blade and reach every exit before the sand runs out. | D-pad: Walk / crouch / hang at edges; A: Jump / sword strike; B: Hold to run / parry | Game Store |
+| **Shadow Blade** — A fast ninja action-platformer. Run across moonlit rooftops, bamboo groves and an iron fortress, slash guards, parry arrows, throw shuriken and beat three bosses with learnable patterns. | D-pad: Run / UP = jump (x2); A: Sword slash; B: Throw shuriken | Game Store |
 | **Sky Hopper** — Bounce up from the clouds into outer space. Dodge or blast monsters, grab rockets and springs, never fall. | D-pad: Steer (screen wraps); A: Shoot up; B: Shoot up | Game Store |
+| **Spin Runner** — Roll as Orb, a tiny round robot, through three fast zones: windmill fields, a glowing mushroom cavern and a clockwork works. Build speed on slopes, charge-roll, loop the loop and smash the bugs. | D-pad: Left/right run, hold Down to roll or charge; A: Jump (hold = higher); B: Roll (same as Down) | Game Store |
+| **Street Brawler** — Fight through city streets, harbour docks and neon rooftops. Chain punches, jump kick, swing a pipe and take down each stage's boss. | D-pad: Walk in 8 directions; A: Punch combo / air kick; B: Jump (A+B = spin attack) | Game Store |
 <!-- GAMES:END -->
 
 Built‑in games work offline; Game Store games download on demand and are updated automatically.

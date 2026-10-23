@@ -1219,6 +1219,56 @@
    "achievements": 4
   },
   {
+   "id": "shadow-blade",
+   "name": "Shadow Blade",
+   "short": "SHADOW",
+   "version": "1.0.0",
+   "category": "action",
+   "color": "#2ee6d6",
+   "description": "A fast ninja action-platformer. Run across moonlit rooftops, bamboo groves and an iron fortress, slash guards, parry arrows, throw shuriken and beat three bosses with learnable patterns.",
+   "author": "Retro Console",
+   "tags": [
+    "ninja",
+    "platformer",
+    "action",
+    "boss"
+   ],
+   "icon": {
+    "palette": {
+     "N": "#241a5c",
+     "O": "#fff2c0",
+     "K": "#0d0b21",
+     "B": "#3f4ad0",
+     "H": "#8a96ff",
+     "S": "#ffd9b8",
+     "E": "#14123a",
+     "C": "#2ee6d6",
+     "D": "#14a89c",
+     "M": "#e6eeff",
+     "Y": "#ffcf3a"
+    },
+    "rows": [
+     "NNNNNNNNNOOO",
+     "NNNNKKKKNOOO",
+     "NNNKBBBBKNOO",
+     "NNKBBHHBBKNN",
+     "NNKBBBBBBKNN",
+     "NNKSESSESKNM",
+     "NCKBBBBBBKNM",
+     "CDKKYYYYKKNM",
+     "NDKBBBBBBKYM",
+     "NNKBBKKBBKNM",
+     "NNNKBKKBKNNN",
+     "NNKKKNNKKKNN"
+    ]
+   },
+   "size": 110574,
+   "sha256": "7e1283ee1c9c35362248b3f12f6b8811e9f96ac3aad19b028b1a8924f977f8a9",
+   "url": "packs/shadow-blade-1.0.0.zip",
+   "sdk": 1,
+   "achievements": 4
+  },
+  {
    "id": "sky-hopper",
    "name": "Sky Hopper",
    "short": "SKYHOP",
